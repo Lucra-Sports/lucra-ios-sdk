@@ -1,1 +1,3 @@
-# lucra-ios-sdk
+# LucraSDK
+
+A description of this package.
