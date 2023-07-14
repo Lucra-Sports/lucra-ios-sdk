@@ -7,9 +7,8 @@ let package = Package(
     name: "LucraSDK",
     platforms: [.iOS(.v15)],
     products: [
-        .library(
-            name: "LucraSDK",
-            targets: ["LucraSDK"]),
+        .library(name: "LucraSDK", targets: ["LucraSDK"]),
+                .library(name: "LucraCore", targets: ["LucraCore"])
     ],
     dependencies: [
         .package(url: "https://github.com/AndreaMiotto/PartialSheet.git", .upToNextMajor(from: "2.1.14")),
@@ -22,23 +21,42 @@ let package = Package(
         .package(url: "https://github.com/iterable/swift-sdk", .upToNextMajor(from: "6.0.0")),
         .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "7.0.0")),
         .package(url: "https://github.com/apollographql/apollo-ios.git", .upToNextMajor(from: "0.50.0")),
-        .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0")),
         .package(url: "https://github.com/marmelroy/PhoneNumberKit", from: "3.4.0"),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "8.10.0")),
+//        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "8.10.0")),
         .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/kean/Pulse.git", .upToNextMajor(from: "3.0.0")),
         .package(url: "https://github.com/kean/NukeUI", .upToNextMajor(from: "0.8.1")),
         
     ],
     targets: [
-        .binaryTarget(
-          name: "LucraSDK",
-          url: "https://kineticlucrasdk.s3.amazonaws.com/LucraSDK.xcframework.zip",
-          checksum: "68d61258dd56a52abc2bc0bc6595c9377ac14af494b2d069302c8610905a7e52"
+        .target(
+            name: "LucraCore",
+            dependencies: [
+                "LucraSDK",
+                .product(name: "Apollo", package: "apollo-ios"),
+                .product(name: "ApolloWebSocket", package: "apollo-ios"),
+                .product(name: "Auth0", package: "Auth0.swift"),
+                .byName(name: "PhoneNumberKit"),
+//                .product(name: "FirebaseCrashlytics", package: "firebase-ios-sdk"),
+//                .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
+//                .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
+//                .product(name: "FirebaseDynamicLinks", package: "firebase-ios-sdk"),
+                .byName(name: "Resolver"),
+                .byName(name: "Pulse"),
+                .product(name: "PulseUI", package: "Pulse"),
+                .byName(name: "NukeUI"),
+                .byName(name: "Alamofire"),
+                .byName(name: "CodeScanner"),
+                .byName(name: "EncryptCard"),
+                .product(name: "ZendeskSupportSDK", package: "support_sdk_ios"),
+            ],
+            path: "LucraSDKTarget"
         ),
-        .testTarget(
-            name: "LucraSDKTests",
-            dependencies: ["LucraSDK"]),
+        .binaryTarget(
+            name: "LucraSDK",
+            url: "https://kineticlucrasdk.s3.amazonaws.com/LucraSDK.xcframework.zip",
+            checksum: "67dbed206ce792c0a49dd7f2bcac370e0c9df38741f2732a88354aae95835a93"
+        )
     ]
 )
