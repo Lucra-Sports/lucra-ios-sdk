@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+// Just need an empty file for binary framework wrapper

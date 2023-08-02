@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '16.0'
+
+target 'SDK Sample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SDK Sample
+  pod 'LucraSDK', :podspec => '../LucraSDK.podspec'
+#  pod 'LucraSDK', :podspec => 'https://raw.githubusercontent.com/Lucra-Sports/lucra-ios-sdk/main/LucraSDK.podspec?token=GHSAT0AAAAAACFSRJCDGXPACBVEZPCN5SSCZGKNR3Q'
+
+  target 'SDK SampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SDK SampleUITests' do
+    # Pods for testing
+  end
+
+end
+
+#post_install do |pi|
+#  pi.pods_project.targets.each do |t|
+#    t.build_configurations.each do |config|
+#      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+#    end
+#  end
+#end

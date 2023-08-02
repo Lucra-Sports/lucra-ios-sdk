@@ -1,0 +1,110 @@
+PODS:
+  - Alamofire (5.7.1)
+  - Apollo (1.3.3):
+    - Apollo/Core (= 1.3.3)
+  - Apollo/Core (1.3.3)
+  - Apollo/WebSocket (1.3.3):
+    - Apollo/Core
+  - Auth0 (2.5.0):
+    - JWTDecode (~> 3.1)
+    - SimpleKeychain (~> 1.1)
+  - Gifu (3.3.1)
+  - Iterable-iOS-SDK (6.4.14)
+  - JWTDecode (3.1.0)
+  - LucraSDK (1.0.0):
+    - Alamofire
+    - Apollo
+    - Apollo/WebSocket
+    - Auth0
+    - Iterable-iOS-SDK
+    - NukeUI
+    - PhoneNumberKit
+    - PulseCore
+    - PulseUI
+    - Resolver
+    - ZendeskSupportSDK
+  - Nuke (10.7.1)
+  - NukeUI (0.8.0):
+    - Gifu (~> 3.0)
+    - Nuke (~> 10.5)
+  - PhoneNumberKit (3.6.6):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.6.6)
+    - PhoneNumberKit/UIKit (= 3.6.6)
+  - PhoneNumberKit/PhoneNumberKitCore (3.6.6)
+  - PhoneNumberKit/UIKit (3.6.6):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PulseCore (3.7.3)
+  - PulseUI (3.7.3):
+    - PulseCore (~> 3.0)
+  - Resolver (1.5.0)
+  - SimpleKeychain (1.1.0)
+  - ZendeskCommonUISDK (8.0.0)
+  - ZendeskCoreSDK (4.0.0)
+  - ZendeskMessagingAPISDK (5.0.0):
+    - ZendeskSDKConfigurationsSDK (~> 3.0.0)
+  - ZendeskMessagingSDK (5.0.0):
+    - ZendeskCommonUISDK (~> 8.0.0)
+    - ZendeskMessagingAPISDK (~> 5.0.0)
+  - ZendeskSDKConfigurationsSDK (3.0.0)
+  - ZendeskSupportProvidersSDK (7.0.0):
+    - ZendeskCoreSDK (~> 4.0.0)
+  - ZendeskSupportSDK (7.0.0):
+    - ZendeskMessagingSDK (~> 5.0.0)
+    - ZendeskSupportProvidersSDK (~> 7.0.0)
+
+DEPENDENCIES:
+  - LucraSDK (from `../LucraSDK.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Apollo
+    - Auth0
+    - Gifu
+    - Iterable-iOS-SDK
+    - JWTDecode
+    - Nuke
+    - NukeUI
+    - PhoneNumberKit
+    - PulseCore
+    - PulseUI
+    - Resolver
+    - SimpleKeychain
+    - ZendeskCommonUISDK
+    - ZendeskCoreSDK
+    - ZendeskMessagingAPISDK
+    - ZendeskMessagingSDK
+    - ZendeskSDKConfigurationsSDK
+    - ZendeskSupportProvidersSDK
+    - ZendeskSupportSDK
+
+EXTERNAL SOURCES:
+  LucraSDK:
+    :podspec: "../LucraSDK.podspec"
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  Apollo: ccc6fac4c9d8fcc93f6fb917f58f7b62b7101d56
+  Auth0: 72f19ad566fdf57f07bf37f828afd0c1570769a5
+  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
+  Iterable-iOS-SDK: e9ccde07851de4882aa0ee7e48b37e202835a09b
+  JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
+  LucraSDK: fbd52f35bac97891287078e7afff00272ce71a4b
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
+  PhoneNumberKit: 5b1be7ee4955dfeeb855f51eecdd829ab24b3484
+  PulseCore: 5272742b4b51593f062e20ffe7a1ce0ad0174287
+  PulseUI: 473e9a83363b3dab9e3d3bebb7e6252418f28191
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
+  ZendeskCommonUISDK: d2dfaa56b9da2658dac0e078022bf918959b5854
+  ZendeskCoreSDK: bd3bc4e7ac4e508de20425a1eac3512a2d2c86bb
+  ZendeskMessagingAPISDK: 355f623d727620755b4041a42dffda4fb28ab90c
+  ZendeskMessagingSDK: 66b82e44c774359ac14f5fb21765aa73d0d174dd
+  ZendeskSDKConfigurationsSDK: 6b4b0941d46afd7352682c4ce764d5999535b7d4
+  ZendeskSupportProvidersSDK: 44f6639b5845815d4111b97ff00218f122ef9e33
+  ZendeskSupportSDK: cae2bd10740bed62d8f89b78e6eea42713cd1e3c
+
+PODFILE CHECKSUM: 69b4bac354d3f24af77a14dc1b69aee366528d7d
+
+COCOAPODS: 1.12.1
