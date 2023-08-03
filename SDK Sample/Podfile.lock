@@ -6,12 +6,11 @@ PODS:
   - Gifu (3.3.1)
   - Iterable-iOS-SDK (6.4.14)
   - JWTDecode (3.1.0)
-  - LucraSDK (1.0.0):
+  - LucraSDK (0.0.1):
     - Alamofire
     - Auth0
     - Iterable-iOS-SDK
     - NukeUI
-    - PhoneNumberKit
     - PulseCore
     - PulseUI
     - Resolver
@@ -20,12 +19,6 @@ PODS:
   - NukeUI (0.8.0):
     - Gifu (~> 3.0)
     - Nuke (~> 10.5)
-  - PhoneNumberKit (3.6.6):
-    - PhoneNumberKit/PhoneNumberKitCore (= 3.6.6)
-    - PhoneNumberKit/UIKit (= 3.6.6)
-  - PhoneNumberKit/PhoneNumberKitCore (3.6.6)
-  - PhoneNumberKit/UIKit (3.6.6):
-    - PhoneNumberKit/PhoneNumberKitCore
   - PulseCore (3.7.3)
   - PulseUI (3.7.3):
     - PulseCore (~> 3.0)
@@ -49,7 +42,7 @@ DEPENDENCIES:
   - LucraSDK (from `../LucraSDK.podspec`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Auth0
     - Gifu
@@ -57,7 +50,6 @@ SPEC REPOS:
     - JWTDecode
     - Nuke
     - NukeUI
-    - PhoneNumberKit
     - PulseCore
     - PulseUI
     - Resolver
@@ -80,10 +72,9 @@ SPEC CHECKSUMS:
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   Iterable-iOS-SDK: e9ccde07851de4882aa0ee7e48b37e202835a09b
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: a0f5a176fe73cc5d4d4e82b9363efbe45064e112
+  LucraSDK: 4fd32a33ea782b5a3b4d869b261d2d274e29a67b
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
-  PhoneNumberKit: 5b1be7ee4955dfeeb855f51eecdd829ab24b3484
   PulseCore: 5272742b4b51593f062e20ffe7a1ce0ad0174287
   PulseUI: 473e9a83363b3dab9e3d3bebb7e6252418f28191
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
@@ -96,6 +87,6 @@ SPEC CHECKSUMS:
   ZendeskSupportProvidersSDK: 44f6639b5845815d4111b97ff00218f122ef9e33
   ZendeskSupportSDK: cae2bd10740bed62d8f89b78e6eea42713cd1e3c
 
-PODFILE CHECKSUM: afdde9d8ebe9fdac691c4efd246b72c22ed50d1b
+PODFILE CHECKSUM: 14a4ff6af93108930bd720bb32ab06eb25bc626c
 
 COCOAPODS: 1.12.1

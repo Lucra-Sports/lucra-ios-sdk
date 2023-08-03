@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
     s.dependency 'Iterable-iOS-SDK'
     s.dependency 'ZendeskSupportSDK'
     s.dependency 'Auth0'
-    s.dependency 'PhoneNumberKit'
     s.dependency 'Resolver'
     s.dependency 'PulseUI'
     s.dependency 'PulseCore'

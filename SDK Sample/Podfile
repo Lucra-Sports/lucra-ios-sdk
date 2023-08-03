@@ -1,3 +1,6 @@
+source 'https://github.com/Lucra-Sports/lucra-ios-sdk'
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '16.0'
 
 target 'SDK Sample' do
@@ -5,6 +8,8 @@ target 'SDK Sample' do
   use_frameworks!
 
   # Pods for SDK Sample
+  #pod 'LucraSDK'
+
   pod 'LucraSDK', :podspec => '../LucraSDK.podspec'
 
   target 'SDK SampleTests' do
