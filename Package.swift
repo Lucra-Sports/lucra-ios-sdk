@@ -12,12 +12,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.5.0")),
-        .package(url: "https://github.com/twostraws/CodeScanner.git", .upToNextMajor(from: "2.0.0")),
         .package(url: "https://github.com/iterable/swift-sdk", .upToNextMajor(from: "6.0.0")),
         .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "7.0.0")),
-        .package(url: "https://github.com/apollographql/apollo-ios.git", .upToNextMajor(from: "0.50.0")),
         .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0")),
-        .package(url: "https://github.com/marmelroy/PhoneNumberKit", from: "3.4.0"),
         .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/kean/Pulse.git", .upToNextMajor(from: "3.0.0")),
         .package(url: "https://github.com/kean/NukeUI", .upToNextMajor(from: "0.8.1")),
@@ -46,8 +43,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "LucraSDK",
-            url: "https://kineticlucrasdk.s3.amazonaws.com/LucraSDK.xcframework.zip",
-            checksum: "4a48f216de518e4af1123df5f780b90162c8eabd427939d786221fde532b3fb1"
+            url: "https://lucra-sdk.s3.amazonaws.com/ios/spm/0.0.2/LucraSDK.xcframework.zip",
+            checksum: "56a18cfb5273a00e4012bfc70afb79a765c254267c34a504d3c982d5c20cc7e3"
         ),
         .binaryTarget(
             name: "MobileIntelligence",

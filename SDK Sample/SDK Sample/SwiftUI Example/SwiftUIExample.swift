@@ -69,8 +69,8 @@ private struct AlternateAppearance: Appearance {
 }
 
 struct SwiftUIExample: View {
-    @StateObject private var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: "VTa8LJTUUKjcaNFem7UBA98b6GVNO5X3",
-                                                                          environment: .develop,
+    @StateObject private var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: "BHGhy6w9eOPoU7z1UdHffuDNdlihYU6T",
+                                                                          environment: .staging,
                                                                           urlScheme: "TODO:")
                                                        ))
     @Environment(\.dismiss) private var dismiss

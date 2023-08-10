@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-    s.version          = '0.0.1'
+    s.version          = '0.0.2'
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.authors          = 'Lucra, Inc.'
 
     s.module_name = "LucraSDK"
-    s.source = { :http => "https://kineticlucrasdk.s3.amazonaws.com/LucraSDK.zip" }
+    s.source = { :http => "https://lucra-sdk.s3.amazonaws.com/ios/cocoapods/#{s.version}/LucraSDK.zip" }
     s.vendored_frameworks = "#{s.module_name}.xcframework", "MobileIntelligence.xcframework"
     s.preserve_paths = "#{s.module_name}.xcframework/*", "MobileIntelligence.xcframework/*"
 
