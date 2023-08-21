@@ -12,12 +12,12 @@ import LucraSDK
 struct ClientMatchup: Identifiable {
     let id: String
     let title: String
-    let lucraMatchup: GamesMatchup?
+    let lucraMatchup: GYPCreatedMatchupOutput?
 }
 
 class APIExampleViewModel: ObservableObject {
-    @Published var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: "VTa8LJTUUKjcaNFem7UBA98b6GVNO5X3",
-                                                                                 environment: .develop,
+    @Published var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: "BHGhy6w9eOPoU7z1UdHffuDNdlihYU6T",
+                                                                              environment: .staging,
                                                                                  urlScheme: "TODO:")))
     
     @Published var flow: LucraFlow? = nil
@@ -31,12 +31,12 @@ class APIExampleViewModel: ObservableObject {
     func createMatchup() {
         self.errorMessage = nil
         self.isLoading = true
-        
+                
         if isWager {
             Task { @MainActor [weak self] in
                 guard let self else { return }
                 do {
-                    let matchup = try await lucraClient.api.createGamesMatchup(gameId: "DARTS", atStake: wagerAmount)
+                    let matchup = try await lucraClient.api.createGamesMatchup(gameTypeId: "DARTS", atStake: wagerAmount)
                     createClientMatchup(lucraMatchup: matchup)
                 } catch let userError as UserStateError {
                     switch userError {
@@ -49,6 +49,9 @@ class APIExampleViewModel: ObservableObject {
                     @unknown default:
                         fatalError()
                     }
+                } catch let locationError as LocationError {
+                    // Could also show custom location handling here
+                    self.errorMessage = locationError.localizedDescription
                 } catch let error {
                     self.errorMessage = error.localizedDescription
                 }
@@ -67,8 +70,7 @@ class APIExampleViewModel: ObservableObject {
             Task { @MainActor [weak self] in
                 guard let self else { return }
                 do {
-                    //TODO: change to cancel
-//                    try await lucraClient.api.cancelGamesMatchup(id: lucraMatchup.id)
+                    try await lucraClient.api.cancelGamesMatchup(matchupId: lucraMatchup.matchupId)
                     cancelClientMatchup(matchup: matchup)
                 } catch let error {
                     self.errorMessage = error.localizedDescription
@@ -80,12 +82,12 @@ class APIExampleViewModel: ObservableObject {
     }
 
     private func cancelClientMatchup(matchup: ClientMatchup) {
-        // MARK: - This is where the client app would cancel its matchup and use the stored Lucra matchup id to cancel the Lucra matchup
+        // MARK: - This is where the client app would cancel its matchup
         self.matchups.removeAll()
         self.isLoading = false
     }
         
-    private func createClientMatchup(lucraMatchup: GamesMatchup? = nil) {
+    private func createClientMatchup(lucraMatchup: GYPCreatedMatchupOutput? = nil) {
         // MARK: - This is where the client app would create its matchup and store the Lucra matchup id for further interactions with the LucraSDK such as adding opponents to the matchup, cancelling the matchup etc.
         
         self.isLoading = false
@@ -132,11 +134,12 @@ struct APIExample: View {
                     VStack {
                         Text("ID: \(matchup.id)")
                         Text("Title: \(matchup.title)")
-//                        if let amount = matchup.lucraMatchup?.teams.first?.wagerAmount {
-//                            Text("Wager: \(amount.money)")
-//                        } else {
-//                            Text("Wager: N/A")
-//                        }
+                        if let lucraMatchup = matchup.lucraMatchup{
+                            Text("Lucra Matchup ID: \(lucraMatchup.matchupId)")
+                            Text("Lucra Owner Team ID: \(lucraMatchup.ownerTeamId)")
+                            Text("Lucra Opponent Team ID: \(lucraMatchup.opponentTeamId)")
+
+                        }
                         
                         button(title: "Cancel Matchup") {
                             viewModel.cancelMatchup(matchup: matchup)
