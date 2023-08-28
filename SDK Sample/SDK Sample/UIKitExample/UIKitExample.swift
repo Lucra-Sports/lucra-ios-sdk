@@ -29,9 +29,9 @@ private struct AlternateAppearance: UIKitAppearance {
 }
 
 class UIKitSampleViewController: UIViewController {
-    let lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: "VTa8LJTUUKjcaNFem7UBA98b6GVNO5X3",
-                                                                   environment: .develop,
-                                                                   urlScheme: "TODO:"),
+    let lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
+                                                                   environment: lucraEnvironment,
+                                                                   urlScheme: lucraURLScheme),
                                                 appearance: AlternateAppearance()))
     
     override func viewDidLoad() {
@@ -48,7 +48,7 @@ class UIKitSampleViewController: UIViewController {
         self.parent?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: navButton)
     }
     
-    func setup() {        
+    func setup() {
         //Image View
         let imageView = UIImageView()
         imageView.heightAnchor.constraint(equalToConstant: 500.0).isActive = true

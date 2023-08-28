@@ -35,6 +35,7 @@ struct ExampleList: View {
             }
         }
         .navigationTitle("SDK Sample App")
+        .debugMenu()
     }
 }
 

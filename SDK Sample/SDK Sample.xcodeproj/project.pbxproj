@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BFEFAB139337A26D82D610E /* Pods_SDK_SampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4B5CE84A163A5E348AF781 /* Pods_SDK_SampleTests.framework */; };
+		1C4486112A9D5F57005677AA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4486102A9D5F57005677AA /* Environment.swift */; };
 		1C550C432A5C7FB90055E70B /* APIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C550C422A5C7FB90055E70B /* APIExample.swift */; };
 		1CC698EA2A32166D00B847F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC698E92A32166D00B847F9 /* Assets.xcassets */; };
 		1CE493D12A4A209E0085105A /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE493D02A4A209E0085105A /* SwiftUIExample.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		024CEFE3EC6AFF66E67CE1EC /* Pods-SDK Sample-SDK SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK Sample-SDK SampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-SDK Sample-SDK SampleUITests/Pods-SDK Sample-SDK SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C4486102A9D5F57005677AA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1C550C422A5C7FB90055E70B /* APIExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
 		1CC698E92A32166D00B847F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE493D02A4A209E0085105A /* SwiftUIExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		1CECD6662A2E86AB00C3A656 /* SDK Sample */ = {
 			isa = PBXGroup;
 			children = (
+				1C4486102A9D5F57005677AA /* Environment.swift */,
 				1CE493CF2A4A20830085105A /* API Example */,
 				1CE493CE2A4A207A0085105A /* UIKitExample */,
 				1CE493CD2A4A206F0085105A /* SwiftUI Example */,
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CECD66A2A2E86AB00C3A656 /* ContentView.swift in Sources */,
+				1C4486112A9D5F57005677AA /* Environment.swift in Sources */,
 				1C550C432A5C7FB90055E70B /* APIExample.swift in Sources */,
 				1CE493D12A4A209E0085105A /* SwiftUIExample.swift in Sources */,
 				1CECD6682A2E86AB00C3A656 /* SDK_SampleApp.swift in Sources */,

@@ -16,15 +16,15 @@ struct ClientMatchup: Identifiable {
 }
 
 class APIExampleViewModel: ObservableObject {
-    @Published var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: "BHGhy6w9eOPoU7z1UdHffuDNdlihYU6T",
-                                                                              environment: .staging,
-                                                                                 urlScheme: "TODO:")))
+    @Published var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
+                                                                              environment: lucraEnvironment,
+                                                                                 urlScheme: lucraURLScheme)))
     
     @Published var flow: LucraFlow? = nil
 
     @Published var matchups: [ClientMatchup] = []
     @Published var isWager: Bool = false
-    @Published var wagerAmount: Decimal = 0.0
+    @Published var wagerAmount: Decimal = 1.0
     @Published var isLoading: Bool = false
     @Published var errorMessage: String?
 
@@ -46,6 +46,8 @@ class APIExampleViewModel: ObservableObject {
                         flow = .verifyIdentity
                     case .notAllowed:
                         self.errorMessage = "You are not allowed to perform this action."
+                    case .insufficientFunds:
+                        flow = .addFunds
                     @unknown default:
                         fatalError()
                     }
@@ -131,13 +133,18 @@ struct APIExample: View {
                 }
             } else {
                 ForEach(viewModel.matchups) { matchup in
-                    VStack {
-                        Text("ID: \(matchup.id)")
-                        Text("Title: \(matchup.title)")
+                    VStack(alignment: .leading, spacing: 25) {
+                        Text("**Client Info**")
+                            .font(.title)
+                        Text("**ID:** \(matchup.id)")
+                        Text("**Title:** \(matchup.title)")
                         if let lucraMatchup = matchup.lucraMatchup{
-                            Text("Lucra Matchup ID: \(lucraMatchup.matchupId)")
-                            Text("Lucra Owner Team ID: \(lucraMatchup.ownerTeamId)")
-                            Text("Lucra Opponent Team ID: \(lucraMatchup.opponentTeamId)")
+                            Text("**Lucra Info**")
+                                .font(.title)
+
+                            Text("**Matchup ID:** \(lucraMatchup.matchupId)")
+                            Text("**Team ID 1:** \(lucraMatchup.ownerTeamId)")
+                            Text("**Team ID 2:** \(lucraMatchup.opponentTeamId)")
 
                         }
                         
@@ -147,6 +154,8 @@ struct APIExample: View {
                     }
                 }
             }
+            
+            Spacer()
         }
         .padding()
             .lucraFlow($viewModel.flow, client: viewModel.lucraClient)
