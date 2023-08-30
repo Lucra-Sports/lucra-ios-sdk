@@ -55,6 +55,10 @@ private struct AlternateAppearance: Appearance {
             return nil
         case .tiedBlue:
             return nil
+        case .textColor:
+            return nil
+        @unknown default:
+            return nil
         }
     }
     
