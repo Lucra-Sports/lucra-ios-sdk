@@ -44,6 +44,7 @@
 		024CEFE3EC6AFF66E67CE1EC /* Pods-SDK Sample-SDK SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK Sample-SDK SampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-SDK Sample-SDK SampleUITests/Pods-SDK Sample-SDK SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C4486102A9D5F57005677AA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1C550C422A5C7FB90055E70B /* APIExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
+		1C71DE862AD471A5000A2873 /* SDK-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SDK-Sample-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1CC698E92A32166D00B847F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE493D02A4A209E0085105A /* SwiftUIExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
 		1CE493D22A4A20F40085105A /* UIKitExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExample.swift; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 		1CECD6662A2E86AB00C3A656 /* SDK Sample */ = {
 			isa = PBXGroup;
 			children = (
+				1C71DE862AD471A5000A2873 /* SDK-Sample-Info.plist */,
 				1C4486102A9D5F57005677AA /* Environment.swift */,
 				1CE493CF2A4A20830085105A /* API Example */,
 				1CE493CE2A4A207A0085105A /* UIKitExample */,
@@ -607,6 +609,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SDK-Sample-Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Our application needs your Bluetooth access to pin point your location to determine whether you are in an eligible area to place a bet on your desired betting apps. The location check is performed on-demand only.";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Our application needs your Bluetooth access to pin point your location to determine whether you are in an eligible area to place a bet on your desired betting apps. The location check is performed on-demand only.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to share photos related to contests.";
@@ -659,6 +662,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SDK-Sample-Info.plist";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Our application needs your Bluetooth access to pin point your location to determine whether you are in an eligible area to place a bet on your desired betting apps. The location check is performed on-demand only.";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Our application needs your Bluetooth access to pin point your location to determine whether you are in an eligible area to place a bet on your desired betting apps. The location check is performed on-demand only.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to share photos related to contests.";
