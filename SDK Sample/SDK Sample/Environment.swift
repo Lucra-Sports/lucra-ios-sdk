@@ -10,12 +10,13 @@ import LucraSDK
 
 // In a real app these values should be passed in/stored via a secure method
 
-// STG
-let lucraAPIKey = "BHGhy6w9eOPoU7z1UdHffuDNdlihYU6T"
-let lucraEnvironment: LucraEnvironment = .staging
-let lucraURLScheme = "TODO:"
-
-// DEV
-//let lucraAPIKey = "VTa8LJTUUKjcaNFem7UBA98b6GVNO5X3"
-//let lucraEnvironment: LucraEnvironment = .develop
+// PRODUCTION
+//let lucraAPIKey = "<YOUR PROD KEY>"
+//let lucraEnvironment: LucraEnvironment = .production
 //let lucraURLScheme = "TODO:"
+
+// SANDBOX
+#warning("Default Sample App Key. Replace With your Sandbox key.")
+let lucraAPIKey = "YGugBV5xGsicmp48syEcDlBUQ98YeHE5"
+let lucraEnvironment: LucraEnvironment = .sandbox
+let lucraURLScheme = "TODO:"
