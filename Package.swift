@@ -3,12 +3,15 @@
 
 import PackageDescription
 
+let version = "0.4.4"
+
+let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
+
 let package = Package(
     name: "LucraSDK",
     platforms: [.iOS(.v15)],
     products: [
-        .library(name: "LucraSDK", targets: ["LucraSDK"]),
-                .library(name: "LucraCore", targets: ["LucraCore"])
+        .library(name: "LucraSDK", targets: ["LucraSDK", "LucraCore"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.5.0")),
@@ -18,7 +21,6 @@ let package = Package(
         .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/kean/Pulse.git", .upToNextMajor(from: "3.0.0")),
         .package(url: "https://github.com/kean/NukeUI", .upToNextMajor(from: "0.8.1")),
-        
     ],
     targets: [
         .target(
@@ -26,16 +28,15 @@ let package = Package(
             dependencies: [
                 "LucraSDK",
                 "MobileIntelligence",
-                .product(name: "Apollo", package: "apollo-ios"),
-                .product(name: "ApolloWebSocket", package: "apollo-ios"),
+                "GeoComplySDK",
+                "GCSDKDomain",
+                "GeoComplySDK291",
                 .product(name: "Auth0", package: "Auth0.swift"),
-                .byName(name: "PhoneNumberKit"),
                 .byName(name: "Resolver"),
                 .byName(name: "Pulse"),
                 .product(name: "PulseUI", package: "Pulse"),
                 .byName(name: "NukeUI"),
                 .byName(name: "Alamofire"),
-                .byName(name: "CodeScanner"),
                 .product(name: "IterableSDK", package: "swift-sdk"),
                 .product(name: "ZendeskSupportSDK", package: "support_sdk_ios"),
             ],
@@ -43,11 +44,28 @@ let package = Package(
         ),
         .binaryTarget(
             name: "LucraSDK",
-            url: "https://lucra-sdk.s3.amazonaws.com/ios/spm/0.0.2/LucraSDK.xcframework.zip",
-            checksum: "56a18cfb5273a00e4012bfc70afb79a765c254267c34a504d3c982d5c20cc7e3"
+            url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
+            checksum: "9d2047e919330abea5a866678f3cc9ff221ef7c0f35da96874f85c3e9e31e8ce"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
-            path: "MobileIntelligence.xcframework")
+            url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
+            checksum: "d750b263239ac3f66014915898498c662804d48935b8858301bf71cb15c2f23f"
+        ),
+        .binaryTarget(
+            name: "GeoComplySDK",
+            url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
+            checksum: "0c814aed09fa02594b3bbc598be2fb6ba72861ac8ac953c88c28dfc5ab78db55"
+        ),
+        .binaryTarget(
+            name: "GCSDKDomain",
+            url: "\(hostedPackageURL)/GCSDKDomain.xcframework.zip",
+            checksum: "1441c0dd0e4590a1148a4c3ac0b94864af808befae685fc08f5e8eb5930d2997"
+        ),
+        .binaryTarget(
+            name: "GeoComplySDK291",
+            url: "\(hostedPackageURL)/GeoComplySDK291.xcframework.zip",
+            checksum: "04ed7398e7136e7a77e885db71bdd61db7b6a4a897d3d8e0c577b41ef3d53ecc"
+        )
     ]
 )
