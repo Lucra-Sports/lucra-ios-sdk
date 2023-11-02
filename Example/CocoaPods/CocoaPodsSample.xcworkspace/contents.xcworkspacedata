@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/michaelschmidt/Documents/Apps/Lucra/lucra-ios-sdk/Example/Cocoapods/CocoaPodsSample.xcodeproj">
+      location = "group:CocoaPodsSample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:CocoaPodsSample.xcodeproj">
    </FileRef>
 </Workspace>
