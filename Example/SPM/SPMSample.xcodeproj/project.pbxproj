@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE003D82AF3F118002F03FC /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CA2AF3F118002F03FC /* SampleApp.swift */; };
+		1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CC2AF3F118002F03FC /* APIExample.swift */; };
+		1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */; };
+		1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CF2AF3F118002F03FC /* Environment.swift */; };
+		1CE003DC2AF3F118002F03FC /* UIKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003D22AF3F118002F03FC /* UIKitExample.swift */; };
+		1CE003DD2AF3F118002F03FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D32AF3F118002F03FC /* Assets.xcassets */; };
+		1CE003DE2AF3F118002F03FC /* Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D42AF3F118002F03FC /* Sample-Info.plist */; };
+		1CE003DF2AF3F118002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */; };
+		1CE003E02AF3F118002F03FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003D72AF3F118002F03FC /* ContentView.swift */; };
+		1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE003E92AF3FD45002F03FC /* LucraSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CE003B72AF3F0D2002F03FC /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE003CA2AF3F118002F03FC /* SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		1CE003CC2AF3F118002F03FC /* APIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
+		1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
+		1CE003CF2AF3F118002F03FC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1CE003D02AF3F118002F03FC /* Sample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
+		1CE003D22AF3F118002F03FC /* UIKitExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExample.swift; sourceTree = "<group>"; };
+		1CE003D32AF3F118002F03FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE003D42AF3F118002F03FC /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
+		1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CE003D72AF3F118002F03FC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "lucra-ios-sdk"; path = ../..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE003B42AF3F0D2002F03FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE003AE2AF3F0D2002F03FC = {
+			isa = PBXGroup;
+			children = (
+				1CE003E32AF3F30E002F03FC /* Packages */,
+				1CE003C92AF3F118002F03FC /* Sources */,
+				1CE003B82AF3F0D2002F03FC /* Products */,
+				1CE003E82AF3FD45002F03FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE003B82AF3F0D2002F03FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003B72AF3F0D2002F03FC /* SDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE003C92AF3F118002F03FC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003CA2AF3F118002F03FC /* SampleApp.swift */,
+				1CE003CB2AF3F118002F03FC /* API Example */,
+				1CE003CD2AF3F118002F03FC /* SwiftUI Example */,
+				1CE003CF2AF3F118002F03FC /* Environment.swift */,
+				1CE003D02AF3F118002F03FC /* Sample.entitlements */,
+				1CE003D12AF3F118002F03FC /* UIKitExample */,
+				1CE003D32AF3F118002F03FC /* Assets.xcassets */,
+				1CE003D42AF3F118002F03FC /* Sample-Info.plist */,
+				1CE003D52AF3F118002F03FC /* Preview Content */,
+				1CE003D72AF3F118002F03FC /* ContentView.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		1CE003CB2AF3F118002F03FC /* API Example */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003CC2AF3F118002F03FC /* APIExample.swift */,
+			);
+			path = "API Example";
+			sourceTree = "<group>";
+		};
+		1CE003CD2AF3F118002F03FC /* SwiftUI Example */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */,
+			);
+			path = "SwiftUI Example";
+			sourceTree = "<group>";
+		};
+		1CE003D12AF3F118002F03FC /* UIKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003D22AF3F118002F03FC /* UIKitExample.swift */,
+			);
+			path = UIKitExample;
+			sourceTree = "<group>";
+		};
+		1CE003D52AF3F118002F03FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CE003E32AF3F30E002F03FC /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1CE003E82AF3FD45002F03FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE003B62AF3F0D2002F03FC /* SPMSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE003C62AF3F0D4002F03FC /* Build configuration list for PBXNativeTarget "SPMSample" */;
+			buildPhases = (
+				1CE003B32AF3F0D2002F03FC /* Sources */,
+				1CE003B42AF3F0D2002F03FC /* Frameworks */,
+				1CE003B52AF3F0D2002F03FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPMSample;
+			packageProductDependencies = (
+				1CE003E92AF3FD45002F03FC /* LucraSDK */,
+			);
+			productName = SPMSample;
+			productReference = 1CE003B72AF3F0D2002F03FC /* SDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE003AF2AF3F0D2002F03FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1CE003B62AF3F0D2002F03FC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1CE003B22AF3F0D2002F03FC /* Build configuration list for PBXProject "SPMSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CE003AE2AF3F0D2002F03FC;
+			productRefGroup = 1CE003B82AF3F0D2002F03FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE003B62AF3F0D2002F03FC /* SPMSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE003B52AF3F0D2002F03FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE003DE2AF3F118002F03FC /* Sample-Info.plist in Resources */,
+				1CE003DF2AF3F118002F03FC /* Preview Assets.xcassets in Resources */,
+				1CE003DD2AF3F118002F03FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE003B32AF3F0D2002F03FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE003D82AF3F118002F03FC /* SampleApp.swift in Sources */,
+				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,
+				1CE003E02AF3F118002F03FC /* ContentView.swift in Sources */,
+				1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */,
+				1CE003DC2AF3F118002F03FC /* UIKitExample.swift in Sources */,
+				1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1CE003C42AF3F0D4002F03FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CE003C52AF3F0D4002F03FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1CE003C72AF3F0D4002F03FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
+				DEVELOPMENT_TEAM = 3856BYZ76H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "../Sources/Sample-Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
+				PRODUCT_NAME = SDKSample;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CE003C82AF3F0D4002F03FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
+				DEVELOPMENT_TEAM = 3856BYZ76H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "../Sources/Sample-Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
+				PRODUCT_NAME = SDKSample;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE003B22AF3F0D2002F03FC /* Build configuration list for PBXProject "SPMSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE003C42AF3F0D4002F03FC /* Debug */,
+				1CE003C52AF3F0D4002F03FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE003C62AF3F0D4002F03FC /* Build configuration list for PBXNativeTarget "SPMSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE003C72AF3F0D4002F03FC /* Debug */,
+				1CE003C82AF3F0D4002F03FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CE003E92AF3FD45002F03FC /* LucraSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LucraSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1CE003AF2AF3F0D2002F03FC /* Project object */;
+}

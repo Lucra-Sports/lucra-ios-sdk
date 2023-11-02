@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = "#{s.module_name}.xcframework", "MobileIntelligence.xcframework", "GeoComplySDK.xcframework", "GeoComplySDK291.xcframework", "GCSDKDomain.xcframework"
     s.preserve_paths = "#{s.module_name}.xcframework/*", "MobileIntelligence.xcframework/*", "GeoComplySDK.xcframework/*", "GeoComplySDK291.xcframework/*", "GCSDKDomain.xcframework/*"
 
-    s.cocoapods_version = ">= 1.11.0"
+    s.cocoapods_version = ">= 1.14.0"
     
     s.swift_version     = '5.8'
 

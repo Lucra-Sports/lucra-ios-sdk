@@ -39,7 +39,7 @@ PODS:
     - ZendeskSupportProvidersSDK (~> 7.0.0)
 
 DEPENDENCIES:
-  - LucraSDK (from `../LucraSDK.podspec`)
+  - LucraSDK (from `../../LucraSDK.podspec`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -64,7 +64,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   LucraSDK:
-    :podspec: "../LucraSDK.podspec"
+    :podspec: "../../LucraSDK.podspec"
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
@@ -87,6 +87,6 @@ SPEC CHECKSUMS:
   ZendeskSupportProvidersSDK: 44f6639b5845815d4111b97ff00218f122ef9e33
   ZendeskSupportSDK: cae2bd10740bed62d8f89b78e6eea42713cd1e3c
 
-PODFILE CHECKSUM: 14a4ff6af93108930bd720bb32ab06eb25bc626c
+PODFILE CHECKSUM: 59e543ededed5599be30de56d87f926c25a3c722
 
 COCOAPODS: 1.12.1

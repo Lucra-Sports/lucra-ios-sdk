@@ -5,17 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
-        "version" : "5.7.1"
-      }
-    },
-    {
-      "identity" : "apollo-ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apollographql/apollo-ios.git",
-      "state" : {
-        "revision" : "42646f765d22dac0f22bfff48590102195c76da4",
-        "version" : "0.53.0"
+        "revision" : "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
+        "version" : "5.8.1"
       }
     },
     {
@@ -25,15 +16,6 @@
       "state" : {
         "revision" : "9d970f3f5a694a146724e055c7932808a274d96e",
         "version" : "2.5.0"
-      }
-    },
-    {
-      "identity" : "codescanner",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/twostraws/CodeScanner.git",
-      "state" : {
-        "revision" : "bf5d7087015620b250ee6c865b3c9039fc159d1a",
-        "version" : "2.3.3"
       }
     },
     {
@@ -109,15 +91,6 @@
       }
     },
     {
-      "identity" : "phonenumberkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/marmelroy/PhoneNumberKit",
-      "state" : {
-        "revision" : "9bc965a326df8d5115f0b7bb77f09c542b8ec417",
-        "version" : "3.6.6"
-      }
-    },
-    {
       "identity" : "pulse",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kean/Pulse.git",
@@ -154,15 +127,6 @@
       }
     },
     {
-      "identity" : "sqlite.swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stephencelis/SQLite.swift.git",
-      "state" : {
-        "revision" : "4d543d811ee644fa4cc4bfa0be996b4dd6ba0f54",
-        "version" : "0.13.3"
-      }
-    },
-    {
       "identity" : "support_providers_sdk_ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/support_providers_sdk_ios",
@@ -185,8 +149,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iterable/swift-sdk",
       "state" : {
-        "revision" : "3f3b3cd75c58cb5fccca008f26018ef340b0176b",
-        "version" : "6.4.14"
+        "revision" : "84caa3d2570ad7cbf70b64d7875ae850a7ca551c",
+        "version" : "6.4.15"
       }
     }
   ],
