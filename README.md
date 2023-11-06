@@ -1,11 +1,5 @@
 # ``LucraSDK``
 
-TODO
-
-## Overview
-
-TODO
-
 ## Topics
 
 ### Initialization
