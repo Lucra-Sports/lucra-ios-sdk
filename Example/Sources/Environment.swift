@@ -17,6 +17,6 @@ import LucraSDK
 
 // SANDBOX
 #warning("Default Sample App Key. Replace With your Sandbox key.")
-let lucraAPIKey = "YGugBV5xGsicmp48syEcDlBUQ98YeHE5"
+let lucraAPIKey = "<your api key here>"
 let lucraEnvironment: LucraEnvironment = .sandbox
 let lucraURLScheme = "TODO:"
