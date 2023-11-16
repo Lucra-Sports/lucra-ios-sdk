@@ -67,16 +67,16 @@
 		1CE003C92AF3F118002F03FC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1CE003D02AF3F118002F03FC /* Sample.entitlements */,
+				1CE003CF2AF3F118002F03FC /* Environment.swift */,
 				1CE003CA2AF3F118002F03FC /* SampleApp.swift */,
+				1CE003D72AF3F118002F03FC /* ContentView.swift */,
 				1CE003CB2AF3F118002F03FC /* API Example */,
 				1CE003CD2AF3F118002F03FC /* SwiftUI Example */,
-				1CE003CF2AF3F118002F03FC /* Environment.swift */,
-				1CE003D02AF3F118002F03FC /* Sample.entitlements */,
 				1CE003D12AF3F118002F03FC /* UIKitExample */,
 				1CE003D32AF3F118002F03FC /* Assets.xcassets */,
 				1CE003D42AF3F118002F03FC /* Sample-Info.plist */,
 				1CE003D52AF3F118002F03FC /* Preview Content */,
-				1CE003D72AF3F118002F03FC /* ContentView.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
