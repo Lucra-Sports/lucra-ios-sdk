@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "0.4.4"
+let version = "0.5.0"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.5.0")),
         .package(url: "https://github.com/iterable/swift-sdk", .upToNextMajor(from: "6.0.0")),
-        .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "7.0.0")),
+        .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "8.0.0")),
         .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0")),
         .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/kean/Pulse.git", .upToNextMajor(from: "3.0.0")),
@@ -45,7 +45,7 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "9d2047e919330abea5a866678f3cc9ff221ef7c0f35da96874f85c3e9e31e8ce"
+            checksum: "0827d4201908c0ef10ce29e18920d01a10110127132cb4bde4903929adb776b3"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
