@@ -35,24 +35,6 @@ class UIKitSampleViewController: UIViewController {
     }
     
     func setup() {        
-        //Image View
-//        let imageView = UIImageView()
-//        imageView.heightAnchor.constraint(equalToConstant: 500.0).isActive = true
-//        imageView.widthAnchor.constraint(equalToConstant: 500.0).isActive = true
-//        imageView.contentMode = .scaleAspectFit
-//        imageView.image = UIImage(named: "DylanWine")
-//
-//
-//        let addFundsButton = button(title: "Add Funds", action: { [weak self] in
-//            guard let self else { return }
-//            self.present(lucraFlow: .addFunds, client: lucraClient, animated: true)
-//        })
-//
-//        let createGamesMatchupButton = button(title: "Create Games Matchup", action: { [weak self] in
-//            guard let self else { return }
-//            self.present(lucraFlow: .createGamesMatchup, client: lucraClient, animated: true)
-//        })
-        
         let stackView = UIStackView()
         stackView.axis = NSLayoutConstraint.Axis.vertical
         stackView.distribution = UIStackView.Distribution.equalSpacing

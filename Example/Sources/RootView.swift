@@ -11,7 +11,8 @@ import LucraSDK
 struct RootView: View {
     @StateObject private var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
                                                                                         environment: lucraEnvironment,
-                                                                                        urlScheme: lucraURLScheme
+                                                                                        urlScheme: lucraURLScheme,
+                                                                                        merchantID: lucraMerchantID
                                                                                        ),
                                                                      appearance: ClientTheme(background: "#001448",
                                                                                              surface: "#1C2575",
