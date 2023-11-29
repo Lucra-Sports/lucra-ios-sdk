@@ -9,38 +9,20 @@ import SwiftUI
 import LucraSDK
 
 struct SwiftUIExample: View {
-    @StateObject private var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
-                                                                                        environment: lucraEnvironment,
-                                                                                        urlScheme: lucraURLScheme),
-                                                                     appearance: ClientTheme()))
+    @EnvironmentObject var lucraClient: LucraClient
+    
     @Environment(\.dismiss) private var dismiss
     @State private var currentLucraFlow: LucraFlow?
 
     var body: some View {
         VStack(spacing: 25) {
-            Text("SwiftUI Example")
-                .font(.largeTitle)
-                .bold()
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-            
-            Image("DylanPingPong")
-                .resizable()
-                .scaledToFit()
-                .frame(maxWidth: .infinity)
-            
-            Spacer()
-            
-            button(title: "Add Funds") {
-                currentLucraFlow = .addFunds
-            }
-            
-            button(title: "Create Games Matchup") {
-                currentLucraFlow = .createGamesMatchup
+            ForEach(LucraFlow.allCases) { flow in
+                button(title: flow.displayName) {
+                    currentLucraFlow = flow
+                }
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle("SwiftUI Example")
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
@@ -56,7 +38,6 @@ struct SwiftUIExample: View {
                 .cornerRadius(.infinity, corners: .allCorners)
             }
         })
-        .background(Color.black.edgesIgnoringSafeArea(.all))
         .lucraFlow($currentLucraFlow, client: lucraClient)
     }
     

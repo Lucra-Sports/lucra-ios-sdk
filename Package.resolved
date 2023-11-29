@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
-        "version" : "5.8.1"
+        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
+        "version" : "5.7.1"
       }
     },
     {
@@ -149,8 +149,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/iterable/swift-sdk",
       "state" : {
-        "revision" : "34b35df374709074c1794a75fc30b73454a7b4ae",
-        "version" : "6.4.16"
+        "revision" : "3f3b3cd75c58cb5fccca008f26018ef340b0176b",
+        "version" : "6.4.14"
       }
     }
   ],

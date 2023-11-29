@@ -11,12 +11,15 @@ import LucraSDK
 // In a real app these values should be passed in/stored via a secure method
 
 // PRODUCTION
+//#error("Please set your configuration below then delete this line.")
 //let lucraAPIKey = "<YOUR PROD KEY>"
 //let lucraEnvironment: LucraEnvironment = .production
-//let lucraURLScheme = "TODO:"
+//let lucraURLScheme = "<YOUR URL SCHEME>"
+//let lucraMerchantID = "<YOUR APPLE PAY MERCHANT ID>"
 
 // SANDBOX
-#warning("Default Sample App Key. Replace With your Sandbox key.")
-let lucraAPIKey = "<your api key here>"
+#error("Please set your configuration below then delete this line.")
+let lucraAPIKey = "<YOUR SANDBOX KEY>"
 let lucraEnvironment: LucraEnvironment = .sandbox
-let lucraURLScheme = "TODO:"
+let lucraURLScheme = "<YOUR URL SCHEME>"
+let lucraMerchantID = "<YOUR APPLE PAY MERCHANT ID>"
