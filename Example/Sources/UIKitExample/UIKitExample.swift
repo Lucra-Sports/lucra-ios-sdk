@@ -8,36 +8,22 @@
 import SwiftUI
 import LucraSDK
 
-private struct AlternateAppearance: UIKitAppearance {
-    func color(_ font: LucraColor) -> UIColor? {
-        switch font {
-        case .lucraOrange:
-            return .blue
-        default:
-            return nil
-        }
+class UIKitSampleViewController: UIViewController {
+    private let lucraClient: LucraClient
+    
+    init(lucraClient: LucraClient) {
+        self.lucraClient = lucraClient
+        super.init(nibName: nil, bundle: nil)
     }
     
-    func font(_ font: LucraFont) -> UIFont? {
-        switch font {
-        case .h1:
-            return UIFont.systemFont(ofSize: 5)
-        default:
-            return nil
-        }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-}
-
-class UIKitSampleViewController: UIViewController {
-    let lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
-                                                                   environment: lucraEnvironment,
-                                                                   urlScheme: lucraURLScheme),
-                                                appearance: AlternateAppearance()))
     
     override func viewDidLoad() {
         setup()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         let navButton = button(title: "⚡️ \((lucraClient.user?.balance ?? 0.0).money)", action: { [weak self] in
             guard let self else { return }
@@ -48,33 +34,21 @@ class UIKitSampleViewController: UIViewController {
         self.parent?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: navButton)
     }
     
-    func setup() {
-        //Image View
-        let imageView = UIImageView()
-        imageView.heightAnchor.constraint(equalToConstant: 500.0).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 500.0).isActive = true
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "DylanWine")
-        
-        let addFundsButton = button(title: "Add Funds", action: { [weak self] in
-            guard let self else { return }
-            self.present(lucraFlow: .addFunds, client: lucraClient, animated: true)
-        })
-        
-        let createGamesMatchupButton = button(title: "Create Games Matchup", action: { [weak self] in
-            guard let self else { return }
-            self.present(lucraFlow: .createGamesMatchup, client: lucraClient, animated: true)
-        })
-        
+    func setup() {        
         let stackView = UIStackView()
         stackView.axis = NSLayoutConstraint.Axis.vertical
         stackView.distribution = UIStackView.Distribution.equalSpacing
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing = 16.0
-        
-        stackView.addArrangedSubview(imageView)
-        stackView.addArrangedSubview(addFundsButton)
-        stackView.addArrangedSubview(createGamesMatchupButton)
+                
+        for flow in LucraFlow.allCases {
+            let flowButton = button(title: flow.displayName, action: { [weak self] in
+                guard let self else { return }
+                self.present(lucraFlow: flow, client: lucraClient, animated: true)
+            })
+            stackView.addArrangedSubview(flowButton)
+        }
+                
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(stackView)
@@ -105,10 +79,46 @@ class UIKitSampleViewController: UIViewController {
 
 // MARK: - Just needed to be able to launch UIKit since this sample project's root is SwiftUI
 struct UIKitSampleViewControllerRepresentable: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> UIKitSampleViewController {
-        UIKitSampleViewController()
+    @EnvironmentObject var lucraClient: LucraClient
+
+    func makeUIViewController(context: Context) -> TabBarViewController {
+        TabBarViewController(lucraClient: lucraClient)
     }
     
-    func updateUIViewController(_ uiViewController: UIKitSampleViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: TabBarViewController, context: Context) {
+    }
+}
+
+
+public class TabBarViewController: UITabBarController {
+    private let lucraClient: LucraClient
+    
+    init(lucraClient: LucraClient) {
+        self.lucraClient = lucraClient
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+
+        setupViewControllers()
+        let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+           tabBarAppearance.configureWithDefaultBackground()
+              UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+    }
+
+    func setupViewControllers() {
+        let firstVC = UIKitSampleViewController(lucraClient: lucraClient)
+        let secondVC: UIViewController = lucraClient.ui.flow(.publicFeed, hideCloseButton: true)
+
+            
+            firstVC.tabBarItem = UITabBarItem(title: "Sheet", image: UIImage(systemName: "square.on.square.intersection.dashed"),selectedImage: UIImage(systemName: "square.on.square.intersection.dashed.fill"))
+            secondVC.tabBarItem = UITabBarItem(title: "Embedded", image: UIImage(systemName: "square.dashed.inset.filled"),selectedImage: UIImage(systemName: "square.dashed.inset.filled.fill"))
+
+            viewControllers = [firstVC, secondVC]
     }
 }

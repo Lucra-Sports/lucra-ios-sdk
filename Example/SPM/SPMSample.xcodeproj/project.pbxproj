@@ -15,8 +15,8 @@
 		1CE003DD2AF3F118002F03FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D32AF3F118002F03FC /* Assets.xcassets */; };
 		1CE003DE2AF3F118002F03FC /* Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D42AF3F118002F03FC /* Sample-Info.plist */; };
 		1CE003DF2AF3F118002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */; };
-		1CE003E02AF3F118002F03FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003D72AF3F118002F03FC /* ContentView.swift */; };
 		1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE003E92AF3FD45002F03FC /* LucraSDK */; };
+		1CFFCD3E2B07B6AE0092D6EC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFFCD3D2B07B6AE0092D6EC /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		1CE003D32AF3F118002F03FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE003D42AF3F118002F03FC /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
 		1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1CE003D72AF3F118002F03FC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "lucra-ios-sdk"; path = ../..; sourceTree = "<group>"; };
+		1CFFCD3D2B07B6AE0092D6EC /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +67,16 @@
 		1CE003C92AF3F118002F03FC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1CFFCD3D2B07B6AE0092D6EC /* RootView.swift */,
+				1CE003CF2AF3F118002F03FC /* Environment.swift */,
 				1CE003CA2AF3F118002F03FC /* SampleApp.swift */,
 				1CE003CB2AF3F118002F03FC /* API Example */,
 				1CE003CD2AF3F118002F03FC /* SwiftUI Example */,
-				1CE003CF2AF3F118002F03FC /* Environment.swift */,
-				1CE003D02AF3F118002F03FC /* Sample.entitlements */,
 				1CE003D12AF3F118002F03FC /* UIKitExample */,
+				1CE003D02AF3F118002F03FC /* Sample.entitlements */,
 				1CE003D32AF3F118002F03FC /* Assets.xcassets */,
 				1CE003D42AF3F118002F03FC /* Sample-Info.plist */,
 				1CE003D52AF3F118002F03FC /* Preview Content */,
-				1CE003D72AF3F118002F03FC /* ContentView.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -205,8 +205,8 @@
 			files = (
 				1CE003D82AF3F118002F03FC /* SampleApp.swift in Sources */,
 				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,
-				1CE003E02AF3F118002F03FC /* ContentView.swift in Sources */,
 				1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */,
+				1CFFCD3E2B07B6AE0092D6EC /* RootView.swift in Sources */,
 				1CE003DC2AF3F118002F03FC /* UIKitExample.swift in Sources */,
 				1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */,
 			);
@@ -331,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = 3856BYZ76H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -346,17 +346,19 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
 				PRODUCT_NAME = SDKSample;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,7 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = 3856BYZ76H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -385,17 +387,19 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
 				PRODUCT_NAME = SDKSample;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
