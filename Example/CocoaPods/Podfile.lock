@@ -6,7 +6,7 @@ PODS:
   - Gifu (3.3.1)
   - Iterable-iOS-SDK (6.4.16)
   - JWTDecode (3.1.0)
-  - LucraSDK (0.6.0):
+  - LucraSDK (0.7.1):
     - Alamofire
     - Auth0
     - Iterable-iOS-SDK
@@ -72,7 +72,7 @@ SPEC CHECKSUMS:
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   Iterable-iOS-SDK: e6ae8c2c1f4d61f702f7c424662abfa23a10d8c7
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: f6fd272571ac586545c66517fb4172d8a1e327dd
+  LucraSDK: 3653e58c3e0bd6f5db6ba7f3a149b9a5a76e8c12
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
   PulseCore: fe047fb6d905591771cf43406f7afae6941e5c42
@@ -87,6 +87,6 @@ SPEC CHECKSUMS:
   ZendeskSupportProvidersSDK: 4aafe8114a9bba1a98dc03ca14d8fa6510cf4e70
   ZendeskSupportSDK: 8cf921c496269bb5f53aac9320f3d002a793991d
 
-PODFILE CHECKSUM: 59e543ededed5599be30de56d87f926c25a3c722
+PODFILE CHECKSUM: f6b541a891ca861d86d6bb8feb317a391516adec
 
 COCOAPODS: 1.14.2
