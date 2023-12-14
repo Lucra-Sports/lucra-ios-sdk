@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "0.7.2"
+let version = "0.7.3"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
