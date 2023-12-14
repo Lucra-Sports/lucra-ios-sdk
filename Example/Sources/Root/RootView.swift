@@ -28,12 +28,12 @@ struct RootView: View {
     var body: some View {
         if #available(iOS 16.0, *) {
             NavigationStack {
-                ExampleList()
+                ExampleList(lucraClient: lucraClient)
             }
             .environmentObject(lucraClient)
         } else {
             NavigationView {
-                ExampleList()
+                ExampleList(lucraClient: lucraClient)
             }
             .environmentObject(lucraClient)
         }
@@ -41,6 +41,8 @@ struct RootView: View {
 }
 
 struct ExampleList: View {
+    @ObservedObject var lucraClient: LucraClient
+    
     var body: some View {
         List {
             NavigationLink("SwiftUI Example") {
@@ -53,8 +55,19 @@ struct ExampleList: View {
             NavigationLink("API Example") {
                 APIExample()
             }
+            NavigationLink("Configure User") {
+                ConfigureUserView(lucraClient: lucraClient)
+            }
         }
-        .navigationTitle("SDK Sample App")
+        .navigationTitle("SDK \(LucraSDK.sdkVersion)")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Logout") {
+                    Task {
+                        await lucraClient.logout()
+                    }
+                }
+            }
+        }
     }
 }
-

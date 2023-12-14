@@ -7,21 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CE003A62AF3E64A002F03FC /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003992AF3E64A002F03FC /* SampleApp.swift */; };
+		1CD838372B28CC950031D558 /* SDK_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD838342B28CC950031D558 /* SDK_SampleApp.swift */; };
+		1CD838382B28CC950031D558 /* ConfigureUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD838352B28CC950031D558 /* ConfigureUserView.swift */; };
+		1CD838392B28CC950031D558 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD838362B28CC950031D558 /* RootView.swift */; };
 		1CE003A72AF3E64A002F03FC /* APIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0039B2AF3E64A002F03FC /* APIExample.swift */; };
 		1CE003A82AF3E64A002F03FC /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0039D2AF3E64A002F03FC /* SwiftUIExample.swift */; };
 		1CE003A92AF3E64A002F03FC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0039E2AF3E64A002F03FC /* Environment.swift */; };
 		1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003A12AF3E64A002F03FC /* UIKitExample.swift */; };
 		1CE003AB2AF3E64A002F03FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A22AF3E64A002F03FC /* Assets.xcassets */; };
 		1CE003AC2AF3E64A002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A42AF3E64A002F03FC /* Preview Assets.xcassets */; };
-		1CFFCD3C2B06AEF50092D6EC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFFCD3B2B06AEF50092D6EC /* RootView.swift */; };
 		3E826B082FFEC0089418D19D /* Pods_CocoaPodsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7BCAE4F654F8880DDF9156 /* Pods_CocoaPodsSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		155CCBE108E90C131FF53E0E /* Pods-CocoaPodsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsSample.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodsSample/Pods-CocoaPodsSample.release.xcconfig"; sourceTree = "<group>"; };
 		1C71DE862AD471A5000A2873 /* Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sample-Info.plist"; path = "../Sources/Sample-Info.plist"; sourceTree = SOURCE_ROOT; };
-		1CE003992AF3E64A002F03FC /* SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		1CD838342B28CC950031D558 /* SDK_SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDK_SampleApp.swift; sourceTree = "<group>"; };
+		1CD838352B28CC950031D558 /* ConfigureUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureUserView.swift; sourceTree = "<group>"; };
+		1CD838362B28CC950031D558 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1CE0039B2AF3E64A002F03FC /* APIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
 		1CE0039D2AF3E64A002F03FC /* SwiftUIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
 		1CE0039E2AF3E64A002F03FC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -30,7 +33,6 @@
 		1CE003A22AF3E64A002F03FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE003A42AF3E64A002F03FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CECD6642A2E86AB00C3A656 /* CocoaPodsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CFFCD3B2B06AEF50092D6EC /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		660F30B2DAC32E8336DEE4DB /* Pods-CocoaPodsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsSample.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodsSample/Pods-CocoaPodsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		DD7BCAE4F654F8880DDF9156 /* Pods_CocoaPodsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,12 +49,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD838332B28CC950031D558 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1CD838342B28CC950031D558 /* SDK_SampleApp.swift */,
+				1CD838352B28CC950031D558 /* ConfigureUserView.swift */,
+				1CD838362B28CC950031D558 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		1CE003982AF3E64A002F03FC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1CD838332B28CC950031D558 /* Root */,
 				1CE0039E2AF3E64A002F03FC /* Environment.swift */,
-				1CE003992AF3E64A002F03FC /* SampleApp.swift */,
-				1CFFCD3B2B06AEF50092D6EC /* RootView.swift */,
 				1CE0039A2AF3E64A002F03FC /* API Example */,
 				1CE0039C2AF3E64A002F03FC /* SwiftUI Example */,
 				1CE003A02AF3E64A002F03FC /* UIKitExample */,
@@ -246,10 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD838382B28CC950031D558 /* ConfigureUserView.swift in Sources */,
 				1CE003A72AF3E64A002F03FC /* APIExample.swift in Sources */,
-				1CE003A62AF3E64A002F03FC /* SampleApp.swift in Sources */,
-				1CFFCD3C2B06AEF50092D6EC /* RootView.swift in Sources */,
 				1CE003A82AF3E64A002F03FC /* SwiftUIExample.swift in Sources */,
+				1CD838372B28CC950031D558 /* SDK_SampleApp.swift in Sources */,
+				1CD838392B28CC950031D558 /* RootView.swift in Sources */,
 				1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */,
 				1CE003A92AF3E64A002F03FC /* Environment.swift in Sources */,
 			);
@@ -374,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = 3856BYZ76H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -410,7 +422,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -430,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = 3856BYZ76H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -466,7 +478,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
