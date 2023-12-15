@@ -6,7 +6,7 @@ PODS:
   - Gifu (3.3.1)
   - Iterable-iOS-SDK (6.4.16)
   - JWTDecode (3.1.0)
-  - LucraSDK (0.7.2):
+  - LucraSDK (0.7.3):
     - Alamofire
     - Auth0
     - Iterable-iOS-SDK
@@ -72,7 +72,7 @@ SPEC CHECKSUMS:
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   Iterable-iOS-SDK: e6ae8c2c1f4d61f702f7c424662abfa23a10d8c7
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: d1719c14704551128ff1dd3d67320a197e6dde48
+  LucraSDK: 70de2d3ee36d9eb041707d758a5d671e7dbf4f11
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
   PulseCore: fe047fb6d905591771cf43406f7afae6941e5c42
