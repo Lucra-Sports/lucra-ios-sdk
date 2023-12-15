@@ -8,7 +8,6 @@ target 'CocoaPodsSample' do
   use_frameworks!
 
   # Pods for SDK Sample
-  #pod 'LucraSDK'
 
   pod 'LucraSDK', :podspec => '../../LucraSDK.podspec'
 

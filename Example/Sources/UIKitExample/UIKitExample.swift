@@ -34,7 +34,7 @@ class UIKitSampleViewController: UIViewController {
         self.parent?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: navButton)
     }
     
-    func setup() {        
+    func setup() {
         let stackView = UIStackView()
         stackView.axis = NSLayoutConstraint.Axis.vertical
         stackView.distribution = UIStackView.Distribution.equalSpacing

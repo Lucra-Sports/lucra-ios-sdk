@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CE003D82AF3F118002F03FC /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CA2AF3F118002F03FC /* SampleApp.swift */; };
+		1CD8383E2B28CCDC0031D558 /* SDK_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */; };
+		1CD8383F2B28CCDC0031D558 /* ConfigureUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */; };
+		1CD838402B28CCDC0031D558 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8383D2B28CCDC0031D558 /* RootView.swift */; };
 		1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CC2AF3F118002F03FC /* APIExample.swift */; };
 		1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */; };
 		1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CF2AF3F118002F03FC /* Environment.swift */; };
@@ -16,12 +18,13 @@
 		1CE003DE2AF3F118002F03FC /* Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D42AF3F118002F03FC /* Sample-Info.plist */; };
 		1CE003DF2AF3F118002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */; };
 		1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE003E92AF3FD45002F03FC /* LucraSDK */; };
-		1CFFCD3E2B07B6AE0092D6EC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFFCD3D2B07B6AE0092D6EC /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDK_SampleApp.swift; sourceTree = "<group>"; };
+		1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureUserView.swift; sourceTree = "<group>"; };
+		1CD8383D2B28CCDC0031D558 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1CE003B72AF3F0D2002F03FC /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CE003CA2AF3F118002F03FC /* SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 		1CE003CC2AF3F118002F03FC /* APIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
 		1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
 		1CE003CF2AF3F118002F03FC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -31,7 +34,6 @@
 		1CE003D42AF3F118002F03FC /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
 		1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "lucra-ios-sdk"; path = ../..; sourceTree = "<group>"; };
-		1CFFCD3D2B07B6AE0092D6EC /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD8383A2B28CCDC0031D558 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */,
+				1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */,
+				1CD8383D2B28CCDC0031D558 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		1CE003AE2AF3F0D2002F03FC = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +79,8 @@
 		1CE003C92AF3F118002F03FC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1CFFCD3D2B07B6AE0092D6EC /* RootView.swift */,
 				1CE003CF2AF3F118002F03FC /* Environment.swift */,
-				1CE003CA2AF3F118002F03FC /* SampleApp.swift */,
+				1CD8383A2B28CCDC0031D558 /* Root */,
 				1CE003CB2AF3F118002F03FC /* API Example */,
 				1CE003CD2AF3F118002F03FC /* SwiftUI Example */,
 				1CE003D12AF3F118002F03FC /* UIKitExample */,
@@ -203,10 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CE003D82AF3F118002F03FC /* SampleApp.swift in Sources */,
+				1CD8383F2B28CCDC0031D558 /* ConfigureUserView.swift in Sources */,
 				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,
 				1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */,
-				1CFFCD3E2B07B6AE0092D6EC /* RootView.swift in Sources */,
+				1CD8383E2B28CCDC0031D558 /* SDK_SampleApp.swift in Sources */,
+				1CD838402B28CCDC0031D558 /* RootView.swift in Sources */,
 				1CE003DC2AF3F118002F03FC /* UIKitExample.swift in Sources */,
 				1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */,
 			);
@@ -331,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = 3856BYZ76H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -362,7 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 0.6.0;
+				MARKETING_VERSION = 0.7.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
 				PRODUCT_NAME = SDKSample;
 				SDKROOT = auto;
@@ -382,7 +394,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ../Sources/Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"../Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = 3856BYZ76H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -413,7 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 0.6.0;
+				MARKETING_VERSION = 0.7.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucrasports.mobile-sample";
 				PRODUCT_NAME = SDKSample;
 				SDKROOT = auto;
