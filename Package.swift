@@ -45,27 +45,27 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "5dd4b881e4102f7ffe5bfdd0af04cfc6046f32b498f01f0d11c865853e894a25"
+            checksum: "3a49939d9264cb61c9f683a30662f078ba9e5e2aab2f86acdeb1432645eaec05"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "329be53ba4456474d2ea7353997c2bbe07d4ad42cb50aaf56fd2d566304b2ce6"
+            checksum: "0467f7f43306fca9882b28af247817b8298daaab8d5a526945e25c6ff552831d"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "9e0284d0246650253eea9587d7d4be9bc4c61dd00b73692ace1aeeba7939f30d"
+            checksum: "b69a4a85317bc12c5060231514bc1b5b3ba36897069272831f71f602a3dbc9a5"
         ),
         .binaryTarget(
             name: "GCSDKDomain",
             url: "\(hostedPackageURL)/GCSDKDomain.xcframework.zip",
-            checksum: "5bd01306eb450d8529a8eaf6b5d029c15ccd59ad301f9467f96ca2f240b28ec9"
+            checksum: "1e7e458eeecfaf0ae4e793542cd768c0961d597db6467488da0a0add97cc3e29"
         ),
         .binaryTarget(
             name: "GeoComplySDK291",
             url: "\(hostedPackageURL)/GeoComplySDK291.xcframework.zip",
-            checksum: "d6b26a8bfc324da9fe5595d1f225187ec20d20824db022efa1aca855ad87fddf"
+            checksum: "d540f5b6c35757c7ee590879ee56d9f8b335197664999297415829fb25beac65"
         )
     ]
 )
