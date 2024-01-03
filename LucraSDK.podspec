@@ -1,10 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-<<<<<<< Updated upstream
-    s.version          = '0.7.5'
-=======
     s.version          = '0.8.0'
->>>>>>> Stashed changes
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
