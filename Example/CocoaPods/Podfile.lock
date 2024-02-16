@@ -1,15 +1,11 @@
 PODS:
-  - Alamofire (5.8.1)
   - Auth0 (2.5.0):
     - JWTDecode (~> 3.1)
     - SimpleKeychain (~> 1.1)
   - Gifu (3.3.1)
-  - Iterable-iOS-SDK (6.4.16)
   - JWTDecode (3.1.0)
-  - LucraSDK (0.7.4):
-    - Alamofire
+  - LucraSDK (1.0.0):
     - Auth0
-    - Iterable-iOS-SDK
     - NukeUI
     - PulseCore
     - PulseUI
@@ -19,8 +15,8 @@ PODS:
   - NukeUI (0.8.0):
     - Gifu (~> 3.0)
     - Nuke (~> 10.5)
-  - PulseCore (4.0.3)
-  - PulseUI (4.0.3):
+  - PulseCore (4.0.5)
+  - PulseUI (4.0.5):
     - PulseCore (~> 4.0)
   - Resolver (1.5.0)
   - SimpleKeychain (1.1.0)
@@ -43,10 +39,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Alamofire
     - Auth0
     - Gifu
-    - Iterable-iOS-SDK
     - JWTDecode
     - Nuke
     - NukeUI
@@ -67,16 +61,14 @@ EXTERNAL SOURCES:
     :podspec: "../../LucraSDK.podspec"
 
 SPEC CHECKSUMS:
-  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   Auth0: 72f19ad566fdf57f07bf37f828afd0c1570769a5
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
-  Iterable-iOS-SDK: e6ae8c2c1f4d61f702f7c424662abfa23a10d8c7
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: 11a8732cce5a06bd975fe9fc8ef1b4b25729b970
+  LucraSDK: 53b521e1e15ec7617d38cbb04af5ca0901ca78bc
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
-  PulseCore: fe047fb6d905591771cf43406f7afae6941e5c42
-  PulseUI: 99cc702dd94cddb2af8e0cfbcc1dec1012fda984
+  PulseCore: 57c2d770c4bd442c4f64f896795d9b11385c03ff
+  PulseUI: ab3626fad924cf656533c532af37b912c735374a
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
   SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
   ZendeskCommonUISDK: b87f90874386ebcc01f4b2a0b20a28c62658987a

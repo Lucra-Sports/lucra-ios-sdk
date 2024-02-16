@@ -18,8 +18,16 @@ import LucraSDK
 //let lucraMerchantID = "<YOUR APPLE PAY MERCHANT ID>"
 
 // SANDBOX
-#error("Please set your configuration below then delete this line.")
-let lucraAPIKey = "<YOUR SANDBOX KEY>"
-let lucraEnvironment: LucraEnvironment = .sandbox
+//#error("Please set your configuration below then delete this line.")
+//let lucraAPIURL = "<YOUR SANDBOX URL>"
+//let lucraAPIKey = "<YOUR SANDBOX KEY>"
+//let lucraEnvironment: LucraEnvironment = .sandbox
+//let lucraURLScheme = "<YOUR URL SCHEME>"
+//let lucraMerchantID = "<YOUR APPLE PAY MERCHANT ID>"
+
+
+let lucraAPIURL = "api-sample.staging.lucrasports.com"
+let lucraAPIKey = "BHGhy6w9eOPoU7z1UdHffuDNdlihYU6T"
+let lucraEnvironment: LucraEnvironment = .staging
 let lucraURLScheme = "<YOUR URL SCHEME>"
 let lucraMerchantID = "<YOUR APPLE PAY MERCHANT ID>"

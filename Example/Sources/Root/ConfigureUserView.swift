@@ -58,17 +58,23 @@ struct ConfigureUserView: View {
                 TextField("Zip", text: $zip)
                 
                 Button("Submit") {
-                    lucraClient.configure(user: .init(username: username,
-                                                      avatarURL: avatarURL,
-                                                      phoneNumber: phoneNumber,
-                                                      email: email,
-                                                      firstName: firstName,
-                                                      lastName: lastName,
-                                                      address: .init(address: address,
-                                                                     addressCont: addressCont,
-                                                                     city: city,
-                                                                     state: state,
-                                                                     zip: zip)))
+                    Task {
+                        do {
+                            try await lucraClient.configure(user: .init(username: username,
+                                                                        avatarURL: avatarURL,
+                                                                        phoneNumber: phoneNumber,
+                                                                        email: email,
+                                                                        firstName: firstName,
+                                                                        lastName: lastName,
+                                                                        address: .init(address: address,
+                                                                                       addressCont: addressCont,
+                                                                                       city: city,
+                                                                                       state: state,
+                                                                                       zip: zip)))
+                        } catch {
+                            print("Configure Error: \(error)")
+                        }
+                    }
                 }
                 .padding()
             }

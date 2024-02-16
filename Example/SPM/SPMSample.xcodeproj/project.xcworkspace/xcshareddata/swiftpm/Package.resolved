@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "alamofire",
+      "identity" : "analytics-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "location" : "https://github.com/segmentio/analytics-swift.git",
       "state" : {
-        "revision" : "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
-        "version" : "5.8.1"
+        "revision" : "067d089444856db64c06775b42d4993b21792bc7",
+        "version" : "1.5.3"
       }
     },
     {
@@ -43,6 +43,15 @@
       "state" : {
         "revision" : "82da0086dea14ca9afc9801234ad8dc4cd9e2738",
         "version" : "3.4.1"
+      }
+    },
+    {
+      "identity" : "jsonsafeencoder-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/segmentio/jsonsafeencoder-swift.git",
+      "state" : {
+        "revision" : "8b70dc8c01b7b041912e30e29d2b488a43f782ac",
+        "version" : "1.0.1"
       }
     },
     {
@@ -127,6 +136,15 @@
       }
     },
     {
+      "identity" : "sovran-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/segmentio/sovran-swift.git",
+      "state" : {
+        "revision" : "64f3b5150c282a34af4578188dce2fd597e600e3",
+        "version" : "1.1.0"
+      }
+    },
+    {
       "identity" : "support_providers_sdk_ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/support_providers_sdk_ios",
@@ -142,15 +160,6 @@
       "state" : {
         "revision" : "ad6b6550dd789b9d2a1da4acba174c176fe7122e",
         "version" : "8.0.0"
-      }
-    },
-    {
-      "identity" : "swift-sdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/iterable/swift-sdk",
-      "state" : {
-        "revision" : "34b35df374709074c1794a75fc30b73454a7b4ae",
-        "version" : "6.4.16"
       }
     }
   ],

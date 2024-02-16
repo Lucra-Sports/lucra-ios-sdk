@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-    s.version          = '0.8.0'
+    s.version          = '1.0.0'
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     DESC
 
     s.homepage         = 'https://lucrasports.com'
-    s.license          = { :type => 'Copyright', :text => 'Copyright 2023 Lucra' }
+    s.license          = { :type => 'Copyright', :text => 'Copyright 2024 Lucra' }
     s.authors          = 'Lucra, Inc.'
 
     s.module_name      = "LucraSDK"
@@ -23,8 +23,6 @@ Pod::Spec.new do |s|
     s.swift_version     = '5.8'
 
     s.ios.deployment_target  = '15.0'
-    s.dependency 'Alamofire'
-    s.dependency 'Iterable-iOS-SDK'
     s.dependency 'ZendeskSupportSDK'
     s.dependency 'Auth0'
     s.dependency 'Resolver'

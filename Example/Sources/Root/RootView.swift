@@ -9,7 +9,8 @@ import SwiftUI
 import LucraSDK
 
 struct RootView: View {
-    @StateObject private var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
+    @StateObject private var lucraClient = LucraClient(config: .init(environment: .init(apiURL: lucraAPIURL,
+                                                                                        apiKey: lucraAPIKey,
                                                                                         environment: lucraEnvironment,
                                                                                         urlScheme: lucraURLScheme,
                                                                                         merchantID: lucraMerchantID

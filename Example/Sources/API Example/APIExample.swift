@@ -16,12 +16,11 @@ struct ClientMatchup: Identifiable {
 }
 
 class APIExampleViewModel: ObservableObject {
-    @Published var lucraClient = LucraClient(config: .init(environment: .init(authenticationClientID: lucraAPIKey,
+    @Published var lucraClient = LucraClient(config: .init(environment: .init(apiURL: lucraAPIURL,
+                                                                              apiKey: lucraAPIKey,
                                                                               environment: lucraEnvironment,
                                                                               urlScheme: lucraURLScheme, 
-                                                                              merchantID: lucraMerchantID)
-    )
-    )
+                                                                              merchantID: lucraMerchantID)))
 
     @Published var flow: LucraFlow? = nil
 
