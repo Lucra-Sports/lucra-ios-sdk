@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "analytics-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/segmentio/analytics-swift.git",
-      "state" : {
-        "revision" : "067d089444856db64c06775b42d4993b21792bc7",
-        "version" : "1.5.3"
-      }
-    },
-    {
       "identity" : "auth0.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/auth0/Auth0.swift.git",
@@ -43,15 +34,6 @@
       "state" : {
         "revision" : "82da0086dea14ca9afc9801234ad8dc4cd9e2738",
         "version" : "3.4.1"
-      }
-    },
-    {
-      "identity" : "jsonsafeencoder-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/segmentio/jsonsafeencoder-swift.git",
-      "state" : {
-        "revision" : "8b70dc8c01b7b041912e30e29d2b488a43f782ac",
-        "version" : "1.0.1"
       }
     },
     {
@@ -132,15 +114,6 @@
       "location" : "https://github.com/auth0/SimpleKeychain.git",
       "state" : {
         "revision" : "f082494aab8056139a4fe234c920a9f92f681aff",
-        "version" : "1.1.0"
-      }
-    },
-    {
-      "identity" : "sovran-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/segmentio/sovran-swift.git",
-      "state" : {
-        "revision" : "64f3b5150c282a34af4578188dce2fd597e600e3",
         "version" : "1.1.0"
       }
     },
