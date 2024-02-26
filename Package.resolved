@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "alamofire",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
-      "state" : {
-        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
-        "version" : "5.7.1"
-      }
-    },
-    {
       "identity" : "auth0.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/auth0/Auth0.swift.git",
@@ -142,15 +133,6 @@
       "state" : {
         "revision" : "ad6b6550dd789b9d2a1da4acba174c176fe7122e",
         "version" : "8.0.0"
-      }
-    },
-    {
-      "identity" : "swift-sdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/iterable/swift-sdk",
-      "state" : {
-        "revision" : "3f3b3cd75c58cb5fccca008f26018ef340b0176b",
-        "version" : "6.4.14"
       }
     }
   ],

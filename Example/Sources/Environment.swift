@@ -19,6 +19,7 @@ import LucraSDK
 
 // SANDBOX
 #error("Please set your configuration below then delete this line.")
+let lucraAPIURL = "<YOUR SANDBOX URL>"
 let lucraAPIKey = "<YOUR SANDBOX KEY>"
 let lucraEnvironment: LucraEnvironment = .sandbox
 let lucraURLScheme = "<YOUR URL SCHEME>"
