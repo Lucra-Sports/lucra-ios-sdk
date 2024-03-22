@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.3.0"
+let version = "1.3.2"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
@@ -41,27 +41,27 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "28f74bbdcb85c808e9ec7ff902a204ea2323b3a1ac53a6d4e3628ca9a19712df"
+            checksum: "1b846c18d5f58673a5df4fddbee1958b1e72c3afd6b4290e8cd75809b6566984"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "6a2dc2b5cc67035b5a7ce8eee92cd3597aa7cd77314d109536b83ac79dffe2b8"
+            checksum: "a0467c53a641a6fed1af570a756d2a353eba0d8dae36eb85b343111e3f83bd6d"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "5cb3540e714c50339bf8eba7c8ee509f25af904a65ada923dd53981ef0b260d4"
+            checksum: "d9c1a10d0ac994173fdc06900e1f1fd79a5a1e66b0f85470ccbaf4fdc8488811"
         ),
         .binaryTarget(
             name: "GCSDKDomain",
             url: "\(hostedPackageURL)/GCSDKDomain.xcframework.zip",
-            checksum: "b086eb4b49b1eaa5af21e5654949a95abf4f60db9469acdbf41cdf5881102168"
+            checksum: "173e6863b18bce617f079a0db522c7a474da021c07b7b21840aff622dee8564f"
         ),
         .binaryTarget(
             name: "GeoComplySDK291",
             url: "\(hostedPackageURL)/GeoComplySDK291.xcframework.zip",
-            checksum: "96c3f3bf874204ef052185ebba7ef8151bd9f34fbd42064a5e2ecdda58e00310"
+            checksum: "0b012c0b2cfdc6a5693ffd2dffbdd87bb504006a8b532268ac6db0f5b0e2aea8"
         )
     ]
 )

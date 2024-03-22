@@ -4,7 +4,7 @@ PODS:
     - SimpleKeychain (~> 1.1)
   - Gifu (3.3.1)
   - JWTDecode (3.1.0)
-  - LucraSDK (1.3.0):
+  - LucraSDK (1.3.2):
     - Auth0
     - NukeUI
     - PulseCore
@@ -64,7 +64,7 @@ SPEC CHECKSUMS:
   Auth0: 72f19ad566fdf57f07bf37f828afd0c1570769a5
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: 3012848be1f4d0dfb402a434b0b1330df7912d68
+  LucraSDK: f03ed3514e418f14714e55dea74f3165e99a1990
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
   PulseCore: 57c2d770c4bd442c4f64f896795d9b11385c03ff
