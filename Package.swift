@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.4.0-beta4"
+let version = "1.4.0-beta5"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
@@ -17,7 +17,6 @@ let package = Package(
         .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "8.0.0")),
         .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0")),
         .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0")),
-        .package(url: "https://github.com/kean/Nuke", .upToNextMajor(from: "12.0.0"))
     ],
     targets: [
         .target(
@@ -30,8 +29,6 @@ let package = Package(
                 "GeoComplySDK291",
                 .product(name: "Auth0", package: "Auth0.swift"),
                 .byName(name: "Resolver"),
-                .byName(name: "Nuke"),
-                .product(name: "NukeUI", package: "Nuke"),
                 .product(name: "ZendeskSupportSDK", package: "support_sdk_ios")
             ],
             path: "LucraSDKTarget"
@@ -39,27 +36,27 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "1b26c9515ffb8c72ca1f912ee953aa6a64c635ee3a7cbba2238e3bba9b367a3e"
+            checksum: "d71c102b12833ffafe71e755eae54d6df1139c30cc4df344a79603e5b3f8485a"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "42f3f8634f24130701ba4f27b6762ffc1605a32772184b35a815b62d9c123de9"
+            checksum: "875521106298927e0942799094a30794e85d87914a7fb94d716500a2f9b7dbad"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "86c3bce1b2e275e953dfa338d6cf43f6318f680e9c1c23174e6b6e2b9bd8112b"
+            checksum: "b74ac9280302f7c517eb543c2ae3a1c93cfded7cb7d43f9b1bca46f0b33df528"
         ),
         .binaryTarget(
             name: "GCSDKDomain",
             url: "\(hostedPackageURL)/GCSDKDomain.xcframework.zip",
-            checksum: "d4d77bc4b1b1332f3263399f9a761531ed14ceade00d7cf633112f30724f5cb3"
+            checksum: "47fcd7a37299b57a75692377df0f629a26661ec8e277679d135eede56bc639cd"
         ),
         .binaryTarget(
             name: "GeoComplySDK291",
             url: "\(hostedPackageURL)/GeoComplySDK291.xcframework.zip",
-            checksum: "35c9a5ccb696b81fac78e0cb0e22298de47866be9873d0b1050ab48150fbcc28"
+            checksum: "73ef289d15f918e2fe027584ce54ba010252081fd72d44ef56e07f7a236d4883"
         )
     ]
 )
