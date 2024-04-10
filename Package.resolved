@@ -1,0 +1,113 @@
+{
+  "pins" : [
+    {
+      "identity" : "auth0.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/Auth0.swift.git",
+      "state" : {
+        "revision" : "a4da5b3f8c962357b67620dae8d5e2a4f9ca02fd",
+        "version" : "2.6.0"
+      }
+    },
+    {
+      "identity" : "commonui_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/commonui_sdk_ios",
+      "state" : {
+        "revision" : "193f7daf7b7ad9788ceffa2d7cd285cd48e63e57",
+        "version" : "9.0.0"
+      }
+    },
+    {
+      "identity" : "core_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/core_sdk_ios",
+      "state" : {
+        "revision" : "9f713da35ec46ada0245f7d89a43e15e849cd131",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "jwtdecode.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/JWTDecode.swift.git",
+      "state" : {
+        "revision" : "58af7278797871e460d79496621b3e5366b865b2",
+        "version" : "3.1.0"
+      }
+    },
+    {
+      "identity" : "messaging_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/messaging_sdk_ios",
+      "state" : {
+        "revision" : "825cc5fcb0e7bcda5bb713089245dae31ee07ae4",
+        "version" : "6.0.0"
+      }
+    },
+    {
+      "identity" : "messagingapi_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/messagingapi_sdk_ios",
+      "state" : {
+        "revision" : "2f21e014a1f284edf484faf39b2b6fe377ec8c64",
+        "version" : "6.0.0"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke",
+      "state" : {
+        "revision" : "4625c73ea00a9fb4b4f3e28d95d0021a44af7e59",
+        "version" : "12.5.0"
+      }
+    },
+    {
+      "identity" : "resolver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Resolver",
+      "state" : {
+        "revision" : "97de0b0320036607564af4a60025b48f8d041221",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "sdkconfigurations_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/sdkconfigurations_sdk_ios",
+      "state" : {
+        "revision" : "fec7b8bf3d85cb895a0820a2f9d102f9d6ba3070",
+        "version" : "4.0.0"
+      }
+    },
+    {
+      "identity" : "simplekeychain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/SimpleKeychain.git",
+      "state" : {
+        "revision" : "f082494aab8056139a4fe234c920a9f92f681aff",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "support_providers_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/support_providers_sdk_ios",
+      "state" : {
+        "revision" : "66b49f0a0e213ee0ce5c4fca0847a1f43fbc7cee",
+        "version" : "8.0.0"
+      }
+    },
+    {
+      "identity" : "support_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/support_sdk_ios",
+      "state" : {
+        "revision" : "ad6b6550dd789b9d2a1da4acba174c176fe7122e",
+        "version" : "8.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
