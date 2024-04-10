@@ -1,25 +1,6 @@
 PODS:
-  - Auth0 (2.6.0):
-    - JWTDecode (~> 3.1)
-    - SimpleKeychain (~> 1.1)
-  - Gifu (3.3.1)
-  - JWTDecode (3.1.0)
-  - LucraSDK (1.3.3):
-    - Auth0
-    - NukeUI
-    - PulseCore
-    - PulseUI
-    - Resolver
+  - LucraSDK (1.4.0-beta3):
     - ZendeskSupportSDK
-  - Nuke (10.7.1)
-  - NukeUI (0.8.0):
-    - Gifu (~> 3.0)
-    - Nuke (~> 10.5)
-  - PulseCore (4.0.5)
-  - PulseUI (4.0.5):
-    - PulseCore (~> 4.0)
-  - Resolver (1.5.0)
-  - SimpleKeychain (1.1.0)
   - ZendeskCommonUISDK (9.0.0)
   - ZendeskCoreSDK (5.0.0)
   - ZendeskMessagingAPISDK (6.0.0):
@@ -39,15 +20,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Auth0
-    - Gifu
-    - JWTDecode
-    - Nuke
-    - NukeUI
-    - PulseCore
-    - PulseUI
-    - Resolver
-    - SimpleKeychain
     - ZendeskCommonUISDK
     - ZendeskCoreSDK
     - ZendeskMessagingAPISDK
@@ -61,16 +33,7 @@ EXTERNAL SOURCES:
     :podspec: "../../LucraSDK.podspec"
 
 SPEC CHECKSUMS:
-  Auth0: 9cdb51adf6d348353e44bca03f9eb6080a58fdf1
-  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
-  JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: c7192540dec90c2dcbc1c875995b30f68a25bdcc
-  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
-  NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
-  PulseCore: 57c2d770c4bd442c4f64f896795d9b11385c03ff
-  PulseUI: ab3626fad924cf656533c532af37b912c735374a
-  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
-  SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
+  LucraSDK: b5aa0e36605223831c34bb3aba49bc9612856692
   ZendeskCommonUISDK: b87f90874386ebcc01f4b2a0b20a28c62658987a
   ZendeskCoreSDK: cdc814e7fd64764fb0b0acb04e596df437708faa
   ZendeskMessagingAPISDK: 9ce539eebcaa014fe6acc44da31262a2c52891c1
