@@ -4,7 +4,7 @@ PODS:
     - SimpleKeychain (~> 1.1)
   - Gifu (3.3.1)
   - JWTDecode (3.1.0)
-  - LucraSDK (1.3.5-beta.2):
+  - LucraSDK (1.3.7):
     - Auth0
     - NukeUI
     - Resolver
@@ -57,7 +57,7 @@ SPEC CHECKSUMS:
   Auth0: 0f9856ed0b424c1e614e1520f708fc4800d390d5
   Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: 99d10ed4b732dbac06190139bdcb482b2f320da6
+  LucraSDK: 2fec64720ad19af7a6ce67dec7f97cf4d81fc08b
   Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
   NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
   Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
@@ -70,6 +70,6 @@ SPEC CHECKSUMS:
   ZendeskSupportProvidersSDK: 4aafe8114a9bba1a98dc03ca14d8fa6510cf4e70
   ZendeskSupportSDK: 8cf921c496269bb5f53aac9320f3d002a793991d
 
-PODFILE CHECKSUM: 833710fc0d188b23abf6fb2bcbdd2166d9513261
+PODFILE CHECKSUM: d1de73e14fa439ce7aa71bf7864ed8cd49200341
 
 COCOAPODS: 1.15.2
