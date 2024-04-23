@@ -9,5 +9,5 @@ target 'CocoaPodsSample' do
   pod 'LucraSDK', :podspec => '../../LucraSDK.podspec'
 
   # In your app use standard pod syntax
-  # pod 'LucraSDK', '~> 1.0.0'
+  # pod 'LucraSDK', '1.3.7'
 end
