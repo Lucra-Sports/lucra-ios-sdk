@@ -2,32 +2,26 @@ PODS:
   - Auth0 (2.7.0):
     - JWTDecode (~> 3.1)
     - SimpleKeychain (~> 1.1)
-  - Gifu (3.3.1)
   - JWTDecode (3.1.0)
-  - LucraSDK (1.3.8):
+  - LucraSDK (1.3.9):
     - Auth0
-    - NukeUI
     - Resolver
     - ZendeskSupportSDK
-  - Nuke (10.7.1)
-  - NukeUI (0.8.0):
-    - Gifu (~> 3.0)
-    - Nuke (~> 10.5)
   - Resolver (1.5.1)
   - SimpleKeychain (1.1.0)
   - ZendeskCommonUISDK (9.0.1)
-  - ZendeskCoreSDK (5.0.1)
+  - ZendeskCoreSDK (5.0.2)
   - ZendeskMessagingAPISDK (6.0.0):
     - ZendeskSDKConfigurationsSDK (~> 4.0.0)
   - ZendeskMessagingSDK (6.0.1):
     - ZendeskCommonUISDK (~> 9.0.1)
     - ZendeskMessagingAPISDK (~> 6.0.0)
   - ZendeskSDKConfigurationsSDK (4.0.0)
-  - ZendeskSupportProvidersSDK (8.0.1):
-    - ZendeskCoreSDK (~> 5.0.1)
-  - ZendeskSupportSDK (8.0.1):
+  - ZendeskSupportProvidersSDK (8.0.2):
+    - ZendeskCoreSDK (~> 5.0.2)
+  - ZendeskSupportSDK (8.0.2):
     - ZendeskMessagingSDK (~> 6.0.1)
-    - ZendeskSupportProvidersSDK (~> 8.0.1)
+    - ZendeskSupportProvidersSDK (~> 8.0.2)
 
 DEPENDENCIES:
   - LucraSDK (from `../../LucraSDK.podspec`)
@@ -35,10 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Auth0
-    - Gifu
     - JWTDecode
-    - Nuke
-    - NukeUI
     - Resolver
     - SimpleKeychain
     - ZendeskCommonUISDK
@@ -55,20 +46,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Auth0: 0f9856ed0b424c1e614e1520f708fc4800d390d5
-  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: 450145417b8bc2e079dd8fb5ecc3bcab2d919701
-  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
-  NukeUI: 6e99837a8d066c93baa4262692d9ea9ffbc863ba
+  LucraSDK: 52bfaa2932ca266808cfe30c596bca0863496209
   Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
   SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
   ZendeskCommonUISDK: 720e6e34eff34ddae5feb1935f788a0893eaf672
-  ZendeskCoreSDK: 329967fb1e03ea01314bd31199a6fc93bbf7611f
+  ZendeskCoreSDK: 43f20009b1d4e739219874e449be85e4fe7feb46
   ZendeskMessagingAPISDK: 9ce539eebcaa014fe6acc44da31262a2c52891c1
   ZendeskMessagingSDK: d0f65229188cb4936a56be6707992a2511b5175b
   ZendeskSDKConfigurationsSDK: 79c444da987390456ec05657ffa2f5ca0eb54aef
-  ZendeskSupportProvidersSDK: 3847d8c86e27e89ad2fb335f38a259f865884717
-  ZendeskSupportSDK: 2a5e81bcff73bc2b40191638111e38337b677045
+  ZendeskSupportProvidersSDK: e105e358a6bb7b1dc22d4b45415d54826c0d7529
+  ZendeskSupportSDK: d87fcb1cfae0ef45ede384c635cc207f18ae8431
 
 PODFILE CHECKSUM: 7e27ea221cbb60fd55fa56e34f8926e5f9ce9541
 

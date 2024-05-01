@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-    s.version          = '1.3.8'
+    s.version          = '1.3.9'
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
     s.source         = { :http => "https://lucra-sdk.s3.amazonaws.com/ios/cocoapods/#{s.version}/LucraSDK.zip" }
     # s.source           = { :http => 'file:' + __dir__ + '/LucraSDK.zip' }
 
-    s.vendored_frameworks = "#{s.module_name}.xcframework", "MobileIntelligence.xcframework", "GeoComplySDK.xcframework", "GeoComplySDK291.xcframework", "GCSDKDomain.xcframework"
-    s.preserve_paths = "#{s.module_name}.xcframework/*", "MobileIntelligence.xcframework/*", "GeoComplySDK.xcframework/*", "GeoComplySDK291.xcframework/*", "GCSDKDomain.xcframework/*"
+    s.vendored_frameworks = "#{s.module_name}.xcframework", "MobileIntelligence.xcframework", "GeoComplySDK.xcframework"
+    s.preserve_paths = "#{s.module_name}.xcframework/*", "MobileIntelligence.xcframework/*", "GeoComplySDK.xcframework/*"
 
     s.cocoapods_version = ">= 1.13.0"
     
@@ -26,6 +26,5 @@ Pod::Spec.new do |s|
     s.dependency 'ZendeskSupportSDK'
     s.dependency 'Auth0'
     s.dependency 'Resolver'
-    s.dependency 'NukeUI'
  
 end
