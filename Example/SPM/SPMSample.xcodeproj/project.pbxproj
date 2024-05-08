@@ -18,6 +18,8 @@
 		1CE003DE2AF3F118002F03FC /* Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D42AF3F118002F03FC /* Sample-Info.plist */; };
 		1CE003DF2AF3F118002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */; };
 		1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE003E92AF3FD45002F03FC /* LucraSDK */; };
+		7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */; };
+		79C8AF102BEB02340032C233 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 79C8AF0F2BEB02340032C233 /* FirebaseDynamicLinks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		1CE003D42AF3F118002F03FC /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
 		1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "lucra-ios-sdk"; path = ../..; sourceTree = "<group>"; };
+		7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */,
+				79C8AF102BEB02340032C233 /* FirebaseDynamicLinks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 				1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */,
 				1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */,
 				1CD8383D2B28CCDC0031D558 /* RootView.swift */,
+				7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			name = SPMSample;
 			packageProductDependencies = (
 				1CE003E92AF3FD45002F03FC /* LucraSDK */,
+				79C8AF0F2BEB02340032C233 /* FirebaseDynamicLinks */,
 			);
 			productName = SPMSample;
 			productReference = 1CE003B72AF3F0D2002F03FC /* SDKSample.app */;
@@ -187,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 1CE003AE2AF3F0D2002F03FC;
+			packageReferences = (
+				79C8AF0E2BEB02340032C233 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1CE003B82AF3F0D2002F03FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,6 +225,7 @@
 			files = (
 				1CD8383F2B28CCDC0031D558 /* ConfigureUserView.swift in Sources */,
 				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,
+				7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */,
 				1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */,
 				1CD8383E2B28CCDC0031D558 /* SDK_SampleApp.swift in Sources */,
 				1CD838402B28CCDC0031D558 /* RootView.swift in Sources */,
@@ -461,10 +471,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		79C8AF0E2BEB02340032C233 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		1CE003E92AF3FD45002F03FC /* LucraSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LucraSDK;
+		};
+		79C8AF0F2BEB02340032C233 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79C8AF0E2BEB02340032C233 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

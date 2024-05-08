@@ -70,5 +70,10 @@ struct ExampleList: View {
                 }
             }
         }
+        .onAppear {
+            lucraClient.registerDeeplinkProvider({ link in
+                await ClientDeeplinkService().pack(deeplink: link)
+            })
+        }
     }
 }
