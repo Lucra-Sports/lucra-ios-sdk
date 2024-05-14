@@ -8,6 +8,7 @@ target 'CocoaPodsSample' do
 
   pod 'LucraSDK', :podspec => '../../LucraSDK.podspec'
   pod 'Firebase'
+  pod 'FirebaseDynamicLinks'
 
   # In your app use standard pod syntax
   # pod 'LucraSDK', '~> 1.0.0'
