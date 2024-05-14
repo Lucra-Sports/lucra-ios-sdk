@@ -33,6 +33,8 @@ PODS:
     - GoogleUtilities/Logger (~> 7.12)
   - FirebaseCoreInternal (10.25.0):
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseDynamicLinks (10.25.0):
+    - FirebaseCore (~> 10.0)
   - FirebaseInstallations (10.25.0):
     - FirebaseCore (~> 10.0)
     - GoogleUtilities/Environment (~> 7.8)
@@ -115,6 +117,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase
+  - FirebaseDynamicLinks
   - LucraSDK (from `../../LucraSDK.podspec`)
 
 SPEC REPOS:
@@ -124,6 +127,7 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreInternal
+    - FirebaseDynamicLinks
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleUtilities
@@ -150,6 +154,7 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: ec00fe8b93b41dc6fe4a28784b8e51da0647a248
   FirebaseCore: 7ec4d0484817f12c3373955bc87762d96842d483
   FirebaseCoreInternal: 910a81992c33715fec9263ca7381d59ab3a750b7
+  FirebaseDynamicLinks: 12c9f5b643943e0565ed28080373f89cbcb914a3
   FirebaseInstallations: 91950fe859846fff0fbd296180909dd273103b09
   GoogleAppMeasurement: 9abf64b682732fed36da827aa2a68f0221fd2356
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
@@ -167,6 +172,6 @@ SPEC CHECKSUMS:
   ZendeskSupportProvidersSDK: e105e358a6bb7b1dc22d4b45415d54826c0d7529
   ZendeskSupportSDK: d87fcb1cfae0ef45ede384c635cc207f18ae8431
 
-PODFILE CHECKSUM: c156875a4043ce7e1522cc475b048e8e0d209e63
+PODFILE CHECKSUM: 8892cf0ee731036547e6d08f2f58b8808b902ceb
 
 COCOAPODS: 1.15.2

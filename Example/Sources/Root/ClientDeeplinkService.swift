@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Firebase
+import FirebaseDynamicLinks
 
 class ClientDeeplinkService: ObservableObject {
     private enum GenerateDeeplinkError: Error {
