@@ -7,6 +7,7 @@ target 'CocoaPodsSample' do
   use_frameworks!
 
   pod 'LucraSDK', :podspec => '../../LucraSDK.podspec'
+  pod 'Firebase'
 
   # In your app use standard pod syntax
   # pod 'LucraSDK', '~> 1.0.0'
