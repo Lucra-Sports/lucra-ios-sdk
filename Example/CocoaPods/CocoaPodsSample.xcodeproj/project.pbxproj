@@ -16,6 +16,8 @@
 		1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003A12AF3E64A002F03FC /* UIKitExample.swift */; };
 		1CE003AB2AF3E64A002F03FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A22AF3E64A002F03FC /* Assets.xcassets */; };
 		1CE003AC2AF3E64A002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A42AF3E64A002F03FC /* Preview Assets.xcassets */; };
+		797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */; };
+		797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */; };
 		8A794BD468CB5379C4579E24 /* Pods_CocoaPodsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A686B86AD533A7BC5755F3A /* Pods_CocoaPodsSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		31CB648459DF69C532B48879 /* Pods-CocoaPodsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsSample.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodsSample/Pods-CocoaPodsSample.release.xcconfig"; sourceTree = "<group>"; };
 		567F5D6DBB22F04275C5C9F4 /* Pods-CocoaPodsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsSample.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodsSample/Pods-CocoaPodsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5A686B86AD533A7BC5755F3A /* Pods_CocoaPodsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
+		797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				1CD838342B28CC950031D558 /* SDK_SampleApp.swift */,
+				797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */,
+				797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */,
 				1CD838352B28CC950031D558 /* ConfigureUserView.swift */,
 				1CD838362B28CC950031D558 /* RootView.swift */,
 			);
@@ -261,7 +267,9 @@
 				1CE003A72AF3E64A002F03FC /* APIExample.swift in Sources */,
 				1CE003A82AF3E64A002F03FC /* SwiftUIExample.swift in Sources */,
 				1CD838372B28CC950031D558 /* SDK_SampleApp.swift in Sources */,
+				797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */,
 				1CD838392B28CC950031D558 /* RootView.swift in Sources */,
+				797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */,
 				1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */,
 				1CE003A92AF3E64A002F03FC /* Environment.swift in Sources */,
 			);
