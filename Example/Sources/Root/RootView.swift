@@ -72,7 +72,12 @@ struct ExampleList: View {
         }
         .onAppear {
             lucraClient.registerDeeplinkProvider({ link in
-                await ClientDeeplinkService().pack(deeplink: link)
+                switch await ClientDeeplinkService().pack(deeplink: link) {
+                case .success(let urlString):
+                    return urlString
+                case .failure(let error):
+                    throw error
+                }
             })
         }
     }

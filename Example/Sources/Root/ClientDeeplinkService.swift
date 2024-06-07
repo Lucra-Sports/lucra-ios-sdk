@@ -27,37 +27,56 @@ class ClientDeeplinkService: ObservableObject {
         }
     }
     
-    func pack(deeplink: String) async -> String {
-        await withCheckedContinuation { continuation in
-            guard let url = URL(string: deeplink),
-                  let linkBuilder = DynamicLinkComponents(link: url,
-                                                          domainURIPrefix: "https://lucrasdk.page.link")
-            else {
-                return continuation.resume(returning: "")
-            }
-            
-            if let myBundleId = Bundle.main.bundleIdentifier {
-                linkBuilder.iOSParameters = DynamicLinkIOSParameters(bundleID: myBundleId)
-            }
-
-            linkBuilder.navigationInfoParameters = DynamicLinkNavigationInfoParameters()
-            linkBuilder.navigationInfoParameters?.isForcedRedirectEnabled = false
-            linkBuilder.socialMetaTagParameters = DynamicLinkSocialMetaTagParameters()
-            linkBuilder.androidParameters = DynamicLinkAndroidParameters(packageName: "com.lucrasports.sdk.app")
-            
-            guard let longDynamicLink = linkBuilder.url else { return }
-            
-            linkBuilder.shorten { url, warnings, error in
-                if let error = error {
-                    return
+    func pack(deeplink: String) async -> Result<String, ClientDeeplinkServiceError> {
+            await withCheckedContinuation { continuation in
+                guard let url = URL(string: deeplink),
+                      let linkBuilder = DynamicLinkComponents(link: url,
+                                                              domainURIPrefix: "https://lucrasdk.page.link")
+                else {
+                    return continuation.resume(returning: .failure(.deeplinkComponentsError))
                 }
-          
-                guard let url = url else {
-                    return continuation.resume(returning: longDynamicLink.absoluteString)
+                
+                if let myBundleId = Bundle.main.bundleIdentifier {
+                    linkBuilder.iOSParameters = DynamicLinkIOSParameters(bundleID: myBundleId)
                 }
 
-                continuation.resume(returning: url.absoluteString)
+                linkBuilder.navigationInfoParameters = DynamicLinkNavigationInfoParameters()
+                linkBuilder.navigationInfoParameters?.isForcedRedirectEnabled = false
+                linkBuilder.socialMetaTagParameters = DynamicLinkSocialMetaTagParameters()
+                linkBuilder.androidParameters = DynamicLinkAndroidParameters(packageName: "com.lucrasports.sdk.app")
+                
+                guard let longDynamicLink = linkBuilder.url else {
+                    return continuation.resume(returning: .failure(.linkBuilderError))
+                }
+                
+                continuation.resume(returning: .success(longDynamicLink.absoluteString))
+                
+                // Replace above line with this and import your Firebase GoogleServices-Info.plist to enable shortening links
+//                linkBuilder.shorten { url, warnings, error in
+//                    if let error = error {
+//                        return continuation.resume(returning: .failure(.shortLinkError))
+//                    }
+//              
+//                    guard let url = url else {
+//                        return continuation.resume(returning: .success(longDynamicLink.absoluteString))
+//                    }
+//
+//                    continuation.resume(returning: .success(url.absoluteString))
+//                }
             }
         }
     }
-}
+
+    enum ClientDeeplinkServiceError: LocalizedError {
+        case linkBuilderError
+        case shortLinkError
+        case deeplinkComponentsError
+        
+        var errorDescription: String? {
+            switch self {
+            case .linkBuilderError: "ClientDeeplinkService: failed to build longDynamicLink"
+            case .shortLinkError: "ClientDeeplinkService: failed to build short link"
+            case .deeplinkComponentsError: "ClientDeeplinkService: failed to initialize DynamicLinkComponents"
+            }
+        }
+    }
