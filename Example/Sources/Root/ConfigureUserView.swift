@@ -22,6 +22,7 @@ struct ConfigureUserView: View {
     @State var city: String
     @State var state: String
     @State var zip: String
+    @State var dateOfBirth: Date
 
 
     init(lucraClient: LucraClient) {
@@ -37,6 +38,7 @@ struct ConfigureUserView: View {
         self._city = .init(initialValue: lucraClient.user?.address?.city ?? "")
         self._state = .init(initialValue: lucraClient.user?.address?.state ?? "")
         self._zip = .init(initialValue: lucraClient.user?.address?.zip ?? "")
+        self._dateOfBirth = .init(initialValue: lucraClient.user?.dateOfBirth ?? Date())
 
     }
 
@@ -70,7 +72,8 @@ struct ConfigureUserView: View {
                                                                                        addressCont: addressCont,
                                                                                        city: city,
                                                                                        state: state,
-                                                                                       zip: zip)))
+                                                                                       zip: zip),
+                                                                        dateOfBirth: dateOfBirth))
                         } catch {
                             print("Configure Error: \(error)")
                         }
