@@ -1,5 +1,5 @@
 PODS:
-  - Auth0 (2.7.2):
+  - Auth0 (2.8.0):
     - JWTDecode (~> 3.1)
     - SimpleKeychain (~> 1.1)
   - Firebase (10.27.0):
@@ -89,7 +89,7 @@ PODS:
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - JWTDecode (3.1.0)
-  - LucraSDK (1.6.4):
+  - LucraSDK (1.7.0):
     - Auth0
     - Resolver
     - ZendeskSupportSDK
@@ -149,7 +149,7 @@ EXTERNAL SOURCES:
     :podspec: "../../LucraSDK.podspec"
 
 SPEC CHECKSUMS:
-  Auth0: 28cb24cb19ebd51f0b07751f16d83b59f4019532
+  Auth0: 7e37a200dfba2adbd7be5590c2653c7218d48169
   Firebase: 26b040b20866a55f55eb3611b9fcf3ae64816b86
   FirebaseAnalytics: f9211b719db260cc91aebee8bb539cb367d0dfd1
   FirebaseCore: a2b95ae4ce7c83ceecfbbbe3b6f1cddc7415a808
@@ -159,7 +159,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: f65fc137531af9ad647f1c0a42f3b6a4d3a98049
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
-  LucraSDK: d623abcd9cbc361edf05ad79f40c3b99601ee352
+  LucraSDK: c7e770de72f522cb9754b4ad4102b2c54473cd06
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
