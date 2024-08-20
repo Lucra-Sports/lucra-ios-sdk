@@ -34,17 +34,17 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "092ee2fad4c2763f384f0027a493db1801954499e79ffde8ed46ab5c70676ea2"
+            checksum: "7a0db8e3e680b11e42c8c1f964790350c65fc34e3825d237d5c4692cf36e77b0"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "a353728309201099c1ca3db2610ef5f6f406ca8ae2aecab07d0679697efcaf23"
+            checksum: "2634bec25e9159e0b26f0093a4be5863942023bd0dd2567643ba4145ff8775bf"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "98a33a5f163457a5b79465b0e2046d78da59c62ea85a7b583f699601983b2af0"
+            checksum: "3e1445f54983e3b97d15742941570c540147987a50a247a8015a62c57831bef6"
         )
     ]
 )

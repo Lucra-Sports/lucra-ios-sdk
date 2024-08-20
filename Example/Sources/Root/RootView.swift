@@ -70,6 +70,9 @@ struct ExampleList: View {
                 }
             }
         }
+        .onOpenURL(perform: { url in
+            lucraClient.handlePaypalVenmoCallback(url: url)
+        })
         .onAppear {
             lucraClient.registerDeeplinkProvider({ link in
                 switch await ClientDeeplinkService().pack(deeplink: link) {
