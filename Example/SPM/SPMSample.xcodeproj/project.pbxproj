@@ -21,6 +21,7 @@
 		797322DB2BF406350046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DA2BF406350046AF11 /* Decimal+Extensions.swift */; };
 		7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */; };
 		79C8AF102BEB02340032C233 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 79C8AF0F2BEB02340032C233 /* FirebaseDynamicLinks */; };
+		79E588AD2C80F84200CC5506 /* ConvertToCreditProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "lucra-ios-sdk"; path = ../..; sourceTree = "<group>"; };
 		797322DA2BF406350046AF11 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
+		79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToCreditProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1CD8383D2B28CCDC0031D558 /* RootView.swift */,
 				7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */,
 				797322DA2BF406350046AF11 /* Decimal+Extensions.swift */,
+				79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				1CD8383F2B28CCDC0031D558 /* ConfigureUserView.swift in Sources */,
 				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,
 				7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */,
+				79E588AD2C80F84200CC5506 /* ConvertToCreditProvider.swift in Sources */,
 				1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */,
 				1CD8383E2B28CCDC0031D558 /* SDK_SampleApp.swift in Sources */,
 				1CD838402B28CCDC0031D558 /* RootView.swift in Sources */,

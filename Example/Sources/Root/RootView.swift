@@ -43,6 +43,7 @@ struct RootView: View {
 
 struct ExampleList: View {
     @ObservedObject var lucraClient: LucraClient
+    @State var convertToCreditProvider: ConvertToCreditProvider? = ExampleC2CProvider()
     
     var body: some View {
         List {
@@ -55,6 +56,9 @@ struct ExampleList: View {
             }
             NavigationLink("API Example") {
                 APIExample()
+            }
+            NavigationLink("Convert to Credit") {
+                SampleC2CView(provider: convertToCreditProvider as! ExampleC2CProvider)
             }
             NavigationLink("Configure User") {
                 ConfigureUserView(lucraClient: lucraClient)
@@ -71,9 +75,10 @@ struct ExampleList: View {
             }
         }
         .onOpenURL(perform: { url in
-            lucraClient.handlePaypalVenmoCallback(url: url)
+            _ = lucraClient.handlePaypalVenmoCallback(url: url)
         })
         .onAppear {
+            lucraClient.registerConvertToCreditProvider(convertToCreditProvider)
             lucraClient.registerDeeplinkProvider({ link in
                 switch await ClientDeeplinkService().pack(deeplink: link) {
                 case .success(let urlString):
