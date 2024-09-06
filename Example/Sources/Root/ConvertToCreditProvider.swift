@@ -77,7 +77,7 @@ struct SampleC2CView: View {
                     VStack(alignment: .leading) {
                         Text("Icon")
                             .lucraFont(.h6)
-                        TextField("Icon", text: $provider.icon)
+                        TextField("Icon", text: $provider.iconUrl)
                             .autocorrectionDisabled()
                     }.padding(.bottom)
                     
@@ -104,7 +104,7 @@ class ExampleC2CProvider: ConvertToCreditProvider, ObservableObject {
     @Published var shortDescription: String = "This is a short description."
     @Published var conversionTerms: String = "No Fee | Instant Transfer"
     @Published var longDescription: String = "You will receive an email confirming your credit and then it will be available to use!"
-    @Published var icon: String = "coin"
+    @Published var iconUrl: String = "coin"
     @Published var metadata: String = "{}"
     @Published var delay: Bool = false
     
@@ -116,21 +116,31 @@ class ExampleC2CProvider: ConvertToCreditProvider, ObservableObject {
         
         let method = CreditWithdrawal(id: id,
                                       title: title,
-                                      icon: icon,
+                                      iconUrl: iconUrl,
                                       theme: CreditWithdrawal.Theme(),
                                       conversionTerms: conversionTerms,
                                       convertedAmount: convertedAmount,
                                       convertedDisplayAmount: convertedAmountDisplay,
                                       shortDescription: shortDescription,
                                       longDescription: longDescription,
-                                      metadata: metadata)
+                                      metaData: stringToMetaData())
         
-        // An optional delay that
         if delay {
             try? await Task.sleep(nanoseconds: 2_000_000_000)
         }
         
         return method
+    }
+    
+    private func stringToMetaData() -> [String: String] {
+        var dictionary: [String: String] = [:]
+        
+        if let jsonData = metadata.data(using: .utf8),
+           let stringDict = try? JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: String] {
+            dictionary = stringDict
+        }
+        
+        return dictionary
     }
     
     private func handleAmount(for amount: Decimal) -> (Decimal, String) {
