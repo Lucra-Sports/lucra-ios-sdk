@@ -88,7 +88,7 @@ PODS:
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - JWTDecode (3.2.0)
-  - LucraSDK (1.8.4):
+  - LucraSDK (1.8.5):
     - Auth0
     - Resolver
     - ZendeskSupportSDK
@@ -100,19 +100,19 @@ PODS:
   - PromisesObjC (2.4.0)
   - Resolver (1.5.1)
   - SimpleKeychain (1.2.0)
-  - ZendeskCommonUISDK (9.0.1)
-  - ZendeskCoreSDK (5.0.3)
-  - ZendeskMessagingAPISDK (6.0.0):
+  - ZendeskCommonUISDK (9.0.2)
+  - ZendeskCoreSDK (5.0.4)
+  - ZendeskMessagingAPISDK (6.0.1):
     - ZendeskSDKConfigurationsSDK (~> 4.0.0)
-  - ZendeskMessagingSDK (6.0.1):
-    - ZendeskCommonUISDK (~> 9.0.1)
-    - ZendeskMessagingAPISDK (~> 6.0.0)
+  - ZendeskMessagingSDK (6.0.2):
+    - ZendeskCommonUISDK (~> 9.0.2)
+    - ZendeskMessagingAPISDK (~> 6.0.1)
   - ZendeskSDKConfigurationsSDK (4.0.0)
-  - ZendeskSupportProvidersSDK (8.0.3):
-    - ZendeskCoreSDK (~> 5.0.3)
-  - ZendeskSupportSDK (8.0.3):
-    - ZendeskMessagingSDK (~> 6.0.1)
-    - ZendeskSupportProvidersSDK (~> 8.0.3)
+  - ZendeskSupportProvidersSDK (8.0.4):
+    - ZendeskCoreSDK (~> 5.0.4)
+  - ZendeskSupportSDK (8.0.4):
+    - ZendeskMessagingSDK (~> 6.0.2)
+    - ZendeskSupportProvidersSDK (~> 8.0.4)
 
 DEPENDENCIES:
   - Firebase
@@ -158,18 +158,18 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 76d4f8b36b03bd8381fa9a7fe2cc7f99c0a2e93a
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   JWTDecode: 7dae24cb9bf9b608eae61e5081029ec169bb5527
-  LucraSDK: 49e9c78c71667dee5b9ea9bbbb4d14a0a01d8a36
+  LucraSDK: b52df3d3ce0b04860665bf8065738f283be9154a
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
   SimpleKeychain: 768cf43ae778b1c21816e94dddf01bb8ee96a075
-  ZendeskCommonUISDK: 720e6e34eff34ddae5feb1935f788a0893eaf672
-  ZendeskCoreSDK: 04db322c3e087d21984ff80118a890305fab2533
-  ZendeskMessagingAPISDK: 9ce539eebcaa014fe6acc44da31262a2c52891c1
-  ZendeskMessagingSDK: d0f65229188cb4936a56be6707992a2511b5175b
+  ZendeskCommonUISDK: 34c069ad52d8b350eb6af7d535a027f58a50b432
+  ZendeskCoreSDK: fe8a8076cf0384637de006ddcaff31d0d7fcf030
+  ZendeskMessagingAPISDK: c8ca98dc931a5b68a622aba65d63673cfe40af88
+  ZendeskMessagingSDK: a5e3850e40dce481c24b05ce89bcd8dfc12d8500
   ZendeskSDKConfigurationsSDK: 79c444da987390456ec05657ffa2f5ca0eb54aef
-  ZendeskSupportProvidersSDK: 2fbd2a9597af5d69760088bfb5e0e595e942f218
-  ZendeskSupportSDK: 22156384d20d30b0aeb263c03f49bef44e1364b2
+  ZendeskSupportProvidersSDK: 2346d8c58d640765f4c997fac2fdad19ba947512
+  ZendeskSupportSDK: 2b4d57ae628d31f6d3ab0e25a251b52d49d40255
 
 PODFILE CHECKSUM: 8892cf0ee731036547e6d08f2f58b8808b902ceb
 
