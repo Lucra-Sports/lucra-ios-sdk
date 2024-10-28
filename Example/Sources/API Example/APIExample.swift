@@ -125,7 +125,7 @@ struct APIExample: View {
                 Toggle("Make this a wager?", isOn: $viewModel.isWager)
                 
                 if viewModel.isWager {
-                    DecimalTextField(amount: $viewModel.wagerAmount, colorScheme: .light)
+                    DecimalTextField(amount: $viewModel.wagerAmount)
                         .preferredColorScheme(.light)
                         .padding()
                 }
