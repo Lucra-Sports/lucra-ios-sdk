@@ -18,6 +18,8 @@
 		1CE003AC2AF3E64A002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A42AF3E64A002F03FC /* Preview Assets.xcassets */; };
 		797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */; };
 		797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */; };
+		79B883C22CE8044A009A7F54 /* ClientRewardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */; };
+		79B883C42CE804B4009A7F54 /* ConfigureRewardProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B883C32CE804AF009A7F54 /* ConfigureRewardProviderView.swift */; };
 		79E588AF2C80FFB100CC5506 /* ConvertToCreditProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E588AE2C80FFB100CC5506 /* ConvertToCreditProvider.swift */; };
 		8A794BD468CB5379C4579E24 /* Pods_CocoaPodsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A686B86AD533A7BC5755F3A /* Pods_CocoaPodsSample.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		5A686B86AD533A7BC5755F3A /* Pods_CocoaPodsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
+		79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRewardProvider.swift; sourceTree = "<group>"; };
+		79B883C32CE804AF009A7F54 /* ConfigureRewardProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureRewardProviderView.swift; sourceTree = "<group>"; };
 		79E588AE2C80FFB100CC5506 /* ConvertToCreditProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertToCreditProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,8 @@
 		1CD838332B28CC950031D558 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				79B883C32CE804AF009A7F54 /* ConfigureRewardProviderView.swift */,
+				79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */,
 				79E588AE2C80FFB100CC5506 /* ConvertToCreditProvider.swift */,
 				1CD838342B28CC950031D558 /* SDK_SampleApp.swift */,
 				797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */,
@@ -269,9 +275,11 @@
 				1CD838382B28CC950031D558 /* ConfigureUserView.swift in Sources */,
 				1CE003A72AF3E64A002F03FC /* APIExample.swift in Sources */,
 				1CE003A82AF3E64A002F03FC /* SwiftUIExample.swift in Sources */,
+				79B883C22CE8044A009A7F54 /* ClientRewardProvider.swift in Sources */,
 				1CD838372B28CC950031D558 /* SDK_SampleApp.swift in Sources */,
 				79E588AF2C80FFB100CC5506 /* ConvertToCreditProvider.swift in Sources */,
 				797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */,
+				79B883C42CE804B4009A7F54 /* ConfigureRewardProviderView.swift in Sources */,
 				1CD838392B28CC950031D558 /* RootView.swift in Sources */,
 				797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */,
 				1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */,
