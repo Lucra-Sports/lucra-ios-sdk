@@ -43,6 +43,7 @@ struct RootView: View {
 
 struct ExampleList: View {
     @ObservedObject var lucraClient: LucraClient
+    @State private var clientRewardProvider = ClientRewardProvider()
     @State var convertToCreditProvider: ConvertToCreditProvider? = ExampleC2CProvider()
     
     var body: some View {
@@ -63,6 +64,10 @@ struct ExampleList: View {
             NavigationLink("Configure User") {
                 ConfigureUserView(lucraClient: lucraClient)
             }
+            NavigationLink("Configure Reward Provider") {
+                ConfigureRewardProviderView()
+                    .environmentObject(clientRewardProvider)
+            }
         }
         .navigationTitle("SDK \(LucraSDK.sdkVersion)")
         .toolbar {
@@ -79,6 +84,7 @@ struct ExampleList: View {
         })
         .onAppear {
             lucraClient.registerConvertToCreditProvider(convertToCreditProvider)
+            lucraClient.registerRewardProvider(clientRewardProvider)
             lucraClient.registerDeeplinkProvider({ link in
                 switch await ClientDeeplinkService().pack(deeplink: link) {
                 case .success(let urlString):
