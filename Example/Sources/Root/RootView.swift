@@ -64,7 +64,7 @@ struct ExampleList: View {
             NavigationLink("Configure User") {
                 ConfigureUserView(lucraClient: lucraClient)
             }
-            NavigationLink("Configure Reward Proivder") {
+            NavigationLink("Configure Reward Provider") {
                 ConfigureRewardProviderView()
                     .environmentObject(clientRewardProvider)
             }
