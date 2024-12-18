@@ -22,6 +22,8 @@
 		7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */; };
 		79C8AF102BEB02340032C233 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 79C8AF0F2BEB02340032C233 /* FirebaseDynamicLinks */; };
 		79E588AD2C80F84200CC5506 /* ConvertToCreditProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */; };
+		79F9463A2D123C0F00FBD0CE /* ClientRewardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F946382D123C0F00FBD0CE /* ClientRewardProvider.swift */; };
+		79F9463B2D123C0F00FBD0CE /* ConfigureRewardProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F946392D123C0F00FBD0CE /* ConfigureRewardProviderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		797322DA2BF406350046AF11 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
 		79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToCreditProvider.swift; sourceTree = "<group>"; };
+		79F946382D123C0F00FBD0CE /* ClientRewardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRewardProvider.swift; sourceTree = "<group>"; };
+		79F946392D123C0F00FBD0CE /* ConfigureRewardProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureRewardProviderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		1CD8383A2B28CCDC0031D558 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				79F946382D123C0F00FBD0CE /* ClientRewardProvider.swift */,
+				79F946392D123C0F00FBD0CE /* ConfigureRewardProviderView.swift */,
 				1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */,
 				1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */,
 				1CD8383D2B28CCDC0031D558 /* RootView.swift */,
@@ -229,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F9463A2D123C0F00FBD0CE /* ClientRewardProvider.swift in Sources */,
+				79F9463B2D123C0F00FBD0CE /* ConfigureRewardProviderView.swift in Sources */,
 				797322DB2BF406350046AF11 /* Decimal+Extensions.swift in Sources */,
 				1CD8383F2B28CCDC0031D558 /* ConfigureUserView.swift in Sources */,
 				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,

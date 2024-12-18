@@ -38,6 +38,7 @@ class ClientRewardProvider: ObservableObject {
 }
 
 extension ClientRewardProvider: LucraRewardProvider {
+    
     func availableRewards() async -> [LucraReward] {
         // fake delay to simulate an actual request from client's BE
         let nanoseconds = artificialDelay * 1_000_000_000
@@ -53,6 +54,11 @@ extension ClientRewardProvider: LucraRewardProvider {
             let url = URL(string: url) ?? URL(string: "https://google.com")!
             UIApplication.shared.open(url)
         }
+    }
+    
+    
+    func viewRewards() {
+        
     }
 }
 
