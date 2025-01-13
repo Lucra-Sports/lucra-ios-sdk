@@ -88,9 +88,8 @@ PODS:
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - JWTDecode (3.2.0)
-  - LucraSDK (2.1.1):
+  - LucraSDK (2.1.2):
     - Auth0
-    - Resolver
     - ZendeskSupportSDK
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
@@ -98,7 +97,6 @@ PODS:
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
   - PromisesObjC (2.4.0)
-  - Resolver (1.5.1)
   - SimpleKeychain (1.2.0)
   - ZendeskCommonUISDK (9.0.3)
   - ZendeskCoreSDK (5.0.5)
@@ -133,7 +131,6 @@ SPEC REPOS:
     - JWTDecode
     - nanopb
     - PromisesObjC
-    - Resolver
     - SimpleKeychain
     - ZendeskCommonUISDK
     - ZendeskCoreSDK
@@ -158,10 +155,9 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 987769c4ca6b968f2479fbcc9fe3ce34af454b8e
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   JWTDecode: 7dae24cb9bf9b608eae61e5081029ec169bb5527
-  LucraSDK: 1f27838c74ae1b2d01de426b871efae470c6e41f
+  LucraSDK: 0c2a36116e443e3ff4671f42789bbd5f0604c5e9
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
-  Resolver: 0e2ce51257e9366c54afe1b9e9be25059e9b9300
   SimpleKeychain: 768cf43ae778b1c21816e94dddf01bb8ee96a075
   ZendeskCommonUISDK: f3ce3e7a1bd7762550a78dbaff57509f3112c22b
   ZendeskCoreSDK: c542b3f82abc3ee52e1291c6fb3436515e098806
