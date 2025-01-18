@@ -25,6 +25,5 @@ Pod::Spec.new do |s|
     s.ios.deployment_target  = '15.0'
     s.dependency 'ZendeskSupportSDK'
     s.dependency 'Auth0'
-    s.dependency 'Resolver'
  
 end
