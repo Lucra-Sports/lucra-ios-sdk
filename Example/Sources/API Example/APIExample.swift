@@ -45,7 +45,7 @@ class APIExampleViewModel: ObservableObject {
                     case .notInitialized:
                         flow = .onboarding
                     case .unverified:
-                        flow = .verifyIdentity
+						flow = .verifyIdentity(procedure: .fullKYCVerification)
                     case .notAllowed:
                         self.errorMessage = "You are not allowed to perform this action."
                     case .insufficientFunds:
