@@ -88,7 +88,7 @@ PODS:
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - JWTDecode (3.2.0)
-  - LucraSDK (2.5.2):
+  - LucraSDK (2.5.3):
     - Auth0
     - ZendeskSupportSDK
   - nanopb (3.30910.0):
@@ -155,7 +155,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 987769c4ca6b968f2479fbcc9fe3ce34af454b8e
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   JWTDecode: 7dae24cb9bf9b608eae61e5081029ec169bb5527
-  LucraSDK: 6cddad6c4de01e4285634f03bf1f9f136cf49f48
+  LucraSDK: caa9724e7abd1ee499ffd7be705d0792003103f8
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   SimpleKeychain: 768cf43ae778b1c21816e94dddf01bb8ee96a075
