@@ -15,8 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "8.0.0")),
-        .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0")),
-        .package(url: "https://github.com/hmlongco/Resolver", .upToNextMajor(from: "1.5.0"))
+        .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0"))
     ],
     targets: [
         .target(
@@ -26,7 +25,6 @@ let package = Package(
                 "MobileIntelligence",
                 "GeoComplySDK",
                 .product(name: "Auth0", package: "Auth0.swift"),
-                .byName(name: "Resolver"),
                 .product(name: "ZendeskSupportSDK", package: "support_sdk_ios")
             ],
             path: "LucraSDKTarget"

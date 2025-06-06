@@ -10,7 +10,6 @@
 		1CD8383E2B28CCDC0031D558 /* SDK_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */; };
 		1CD8383F2B28CCDC0031D558 /* ConfigureUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */; };
 		1CD838402B28CCDC0031D558 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8383D2B28CCDC0031D558 /* RootView.swift */; };
-		1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CC2AF3F118002F03FC /* APIExample.swift */; };
 		1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */; };
 		1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003CF2AF3F118002F03FC /* Environment.swift */; };
 		1CE003DC2AF3F118002F03FC /* UIKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003D22AF3F118002F03FC /* UIKitExample.swift */; };
@@ -18,6 +17,15 @@
 		1CE003DE2AF3F118002F03FC /* Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D42AF3F118002F03FC /* Sample-Info.plist */; };
 		1CE003DF2AF3F118002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */; };
 		1CE003EA2AF3FD45002F03FC /* LucraSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE003E92AF3FD45002F03FC /* LucraSDK */; };
+		794AACBA2DF37D150040723C /* TournamentsLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACB62DF37D150040723C /* TournamentsLandingViewModel.swift */; };
+		794AACBB2DF37D150040723C /* APIExampleGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACAD2DF37D150040723C /* APIExampleGamesViewModel.swift */; };
+		794AACBC2DF37D150040723C /* TournamentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACB22DF37D150040723C /* TournamentDetailsView.swift */; };
+		794AACBD2DF37D150040723C /* APIExampleSportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACB02DF37D150040723C /* APIExampleSportsViewModel.swift */; };
+		794AACBE2DF37D150040723C /* TournamentsLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACB52DF37D150040723C /* TournamentsLandingView.swift */; };
+		794AACBF2DF37D150040723C /* TournamentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACB32DF37D150040723C /* TournamentDetailsViewModel.swift */; };
+		794AACC02DF37D150040723C /* APIExampleGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACAC2DF37D150040723C /* APIExampleGamesView.swift */; };
+		794AACC12DF37D150040723C /* APIExampleSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACAF2DF37D150040723C /* APIExampleSportsView.swift */; };
+		794AACC32DF37D210040723C /* SampleLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACC22DF37D210040723C /* SampleLogging.swift */; };
 		797322DB2BF406350046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DA2BF406350046AF11 /* Decimal+Extensions.swift */; };
 		7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */; };
 		79C8AF102BEB02340032C233 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 79C8AF0F2BEB02340032C233 /* FirebaseDynamicLinks */; };
@@ -31,7 +39,6 @@
 		1CD8383C2B28CCDC0031D558 /* ConfigureUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureUserView.swift; sourceTree = "<group>"; };
 		1CD8383D2B28CCDC0031D558 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1CE003B72AF3F0D2002F03FC /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CE003CC2AF3F118002F03FC /* APIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
 		1CE003CE2AF3F118002F03FC /* SwiftUIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
 		1CE003CF2AF3F118002F03FC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1CE003D02AF3F118002F03FC /* Sample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
@@ -40,6 +47,15 @@
 		1CE003D42AF3F118002F03FC /* Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sample-Info.plist"; sourceTree = "<group>"; };
 		1CE003D62AF3F118002F03FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CE003E42AF3F30E002F03FC /* lucra-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "lucra-ios-sdk"; path = ../..; sourceTree = "<group>"; };
+		794AACAC2DF37D150040723C /* APIExampleGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleGamesView.swift; sourceTree = "<group>"; };
+		794AACAD2DF37D150040723C /* APIExampleGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleGamesViewModel.swift; sourceTree = "<group>"; };
+		794AACAF2DF37D150040723C /* APIExampleSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsView.swift; sourceTree = "<group>"; };
+		794AACB02DF37D150040723C /* APIExampleSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsViewModel.swift; sourceTree = "<group>"; };
+		794AACB22DF37D150040723C /* TournamentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsView.swift; sourceTree = "<group>"; };
+		794AACB32DF37D150040723C /* TournamentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsViewModel.swift; sourceTree = "<group>"; };
+		794AACB52DF37D150040723C /* TournamentsLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingView.swift; sourceTree = "<group>"; };
+		794AACB62DF37D150040723C /* TournamentsLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingViewModel.swift; sourceTree = "<group>"; };
+		794AACC22DF37D210040723C /* SampleLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLogging.swift; sourceTree = "<group>"; };
 		797322DA2BF406350046AF11 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
 		79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToCreditProvider.swift; sourceTree = "<group>"; };
@@ -63,6 +79,7 @@
 		1CD8383A2B28CCDC0031D558 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				794AACC22DF37D210040723C /* SampleLogging.swift */,
 				79F946382D123C0F00FBD0CE /* ClientRewardProvider.swift */,
 				79F946392D123C0F00FBD0CE /* ConfigureRewardProviderView.swift */,
 				1CD8383B2B28CCDC0031D558 /* SDK_SampleApp.swift */,
@@ -96,9 +113,9 @@
 		1CE003C92AF3F118002F03FC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				794AACB92DF37D150040723C /* API Example */,
 				1CE003CF2AF3F118002F03FC /* Environment.swift */,
 				1CD8383A2B28CCDC0031D558 /* Root */,
-				1CE003CB2AF3F118002F03FC /* API Example */,
 				1CE003CD2AF3F118002F03FC /* SwiftUI Example */,
 				1CE003D12AF3F118002F03FC /* UIKitExample */,
 				1CE003D02AF3F118002F03FC /* Sample.entitlements */,
@@ -108,14 +125,6 @@
 			);
 			name = Sources;
 			path = ../Sources;
-			sourceTree = "<group>";
-		};
-		1CE003CB2AF3F118002F03FC /* API Example */ = {
-			isa = PBXGroup;
-			children = (
-				1CE003CC2AF3F118002F03FC /* APIExample.swift */,
-			);
-			path = "API Example";
 			sourceTree = "<group>";
 		};
 		1CE003CD2AF3F118002F03FC /* SwiftUI Example */ = {
@@ -155,6 +164,61 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		794AACAE2DF37D150040723C /* GYP */ = {
+			isa = PBXGroup;
+			children = (
+				794AACAC2DF37D150040723C /* APIExampleGamesView.swift */,
+				794AACAD2DF37D150040723C /* APIExampleGamesViewModel.swift */,
+			);
+			path = GYP;
+			sourceTree = "<group>";
+		};
+		794AACB12DF37D150040723C /* SYW */ = {
+			isa = PBXGroup;
+			children = (
+				794AACAF2DF37D150040723C /* APIExampleSportsView.swift */,
+				794AACB02DF37D150040723C /* APIExampleSportsViewModel.swift */,
+			);
+			path = SYW;
+			sourceTree = "<group>";
+		};
+		794AACB42DF37D150040723C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				794AACB22DF37D150040723C /* TournamentDetailsView.swift */,
+				794AACB32DF37D150040723C /* TournamentDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		794AACB72DF37D150040723C /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				794AACB52DF37D150040723C /* TournamentsLandingView.swift */,
+				794AACB62DF37D150040723C /* TournamentsLandingViewModel.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		794AACB82DF37D150040723C /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				794AACB42DF37D150040723C /* Details */,
+				794AACB72DF37D150040723C /* Landing */,
+			);
+			path = Tournaments;
+			sourceTree = "<group>";
+		};
+		794AACB92DF37D150040723C /* API Example */ = {
+			isa = PBXGroup;
+			children = (
+				794AACAE2DF37D150040723C /* GYP */,
+				794AACB12DF37D150040723C /* SYW */,
+				794AACB82DF37D150040723C /* Tournaments */,
+			);
+			path = "API Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794AACBA2DF37D150040723C /* TournamentsLandingViewModel.swift in Sources */,
+				794AACBB2DF37D150040723C /* APIExampleGamesViewModel.swift in Sources */,
+				794AACBC2DF37D150040723C /* TournamentDetailsView.swift in Sources */,
+				794AACBD2DF37D150040723C /* APIExampleSportsViewModel.swift in Sources */,
+				794AACBE2DF37D150040723C /* TournamentsLandingView.swift in Sources */,
+				794AACBF2DF37D150040723C /* TournamentDetailsViewModel.swift in Sources */,
+				794AACC02DF37D150040723C /* APIExampleGamesView.swift in Sources */,
+				794AACC12DF37D150040723C /* APIExampleSportsView.swift in Sources */,
 				79F9463A2D123C0F00FBD0CE /* ClientRewardProvider.swift in Sources */,
 				79F9463B2D123C0F00FBD0CE /* ConfigureRewardProviderView.swift in Sources */,
 				797322DB2BF406350046AF11 /* Decimal+Extensions.swift in Sources */,
@@ -242,8 +314,8 @@
 				1CE003DB2AF3F118002F03FC /* Environment.swift in Sources */,
 				7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */,
 				79E588AD2C80F84200CC5506 /* ConvertToCreditProvider.swift in Sources */,
-				1CE003D92AF3F118002F03FC /* APIExample.swift in Sources */,
 				1CD8383E2B28CCDC0031D558 /* SDK_SampleApp.swift in Sources */,
+				794AACC32DF37D210040723C /* SampleLogging.swift in Sources */,
 				1CD838402B28CCDC0031D558 /* RootView.swift in Sources */,
 				1CE003DC2AF3F118002F03FC /* UIKitExample.swift in Sources */,
 				1CE003DA2AF3F118002F03FC /* SwiftUIExample.swift in Sources */,

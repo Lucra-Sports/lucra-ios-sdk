@@ -10,12 +10,20 @@
 		1CD838372B28CC950031D558 /* SDK_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD838342B28CC950031D558 /* SDK_SampleApp.swift */; };
 		1CD838382B28CC950031D558 /* ConfigureUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD838352B28CC950031D558 /* ConfigureUserView.swift */; };
 		1CD838392B28CC950031D558 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD838362B28CC950031D558 /* RootView.swift */; };
-		1CE003A72AF3E64A002F03FC /* APIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0039B2AF3E64A002F03FC /* APIExample.swift */; };
 		1CE003A82AF3E64A002F03FC /* SwiftUIExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0039D2AF3E64A002F03FC /* SwiftUIExample.swift */; };
 		1CE003A92AF3E64A002F03FC /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0039E2AF3E64A002F03FC /* Environment.swift */; };
 		1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE003A12AF3E64A002F03FC /* UIKitExample.swift */; };
 		1CE003AB2AF3E64A002F03FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A22AF3E64A002F03FC /* Assets.xcassets */; };
 		1CE003AC2AF3E64A002F03FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE003A42AF3E64A002F03FC /* Preview Assets.xcassets */; };
+		794AACA42DF37BCE0040723C /* APIExampleGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC972DF37BCE0040723C /* APIExampleGamesView.swift */; };
+		794AACA52DF37BCE0040723C /* APIExampleSportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC9B2DF37BCE0040723C /* APIExampleSportsViewModel.swift */; };
+		794AACA62DF37BCE0040723C /* TournamentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC9D2DF37BCE0040723C /* TournamentDetailsView.swift */; };
+		794AACA72DF37BCE0040723C /* APIExampleGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC982DF37BCE0040723C /* APIExampleGamesViewModel.swift */; };
+		794AACA82DF37BCE0040723C /* TournamentsLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACA02DF37BCE0040723C /* TournamentsLandingView.swift */; };
+		794AACA92DF37BCE0040723C /* APIExampleSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC9A2DF37BCE0040723C /* APIExampleSportsView.swift */; };
+		794AACAA2DF37BCE0040723C /* TournamentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC9E2DF37BCE0040723C /* TournamentDetailsViewModel.swift */; };
+		794AACAB2DF37BCE0040723C /* TournamentsLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACA12DF37BCE0040723C /* TournamentsLandingViewModel.swift */; };
+		794AACC52DF37E130040723C /* SampleLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACC42DF37E130040723C /* SampleLogging.swift */; };
 		797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */; };
 		797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */; };
 		79B883C22CE8044A009A7F54 /* ClientRewardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */; };
@@ -29,7 +37,6 @@
 		1CD838342B28CC950031D558 /* SDK_SampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDK_SampleApp.swift; sourceTree = "<group>"; };
 		1CD838352B28CC950031D558 /* ConfigureUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureUserView.swift; sourceTree = "<group>"; };
 		1CD838362B28CC950031D558 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		1CE0039B2AF3E64A002F03FC /* APIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIExample.swift; sourceTree = "<group>"; };
 		1CE0039D2AF3E64A002F03FC /* SwiftUIExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIExample.swift; sourceTree = "<group>"; };
 		1CE0039E2AF3E64A002F03FC /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1CE0039F2AF3E64A002F03FC /* Sample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
@@ -40,6 +47,15 @@
 		31CB648459DF69C532B48879 /* Pods-CocoaPodsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsSample.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodsSample/Pods-CocoaPodsSample.release.xcconfig"; sourceTree = "<group>"; };
 		567F5D6DBB22F04275C5C9F4 /* Pods-CocoaPodsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsSample.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodsSample/Pods-CocoaPodsSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5A686B86AD533A7BC5755F3A /* Pods_CocoaPodsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		794AAC972DF37BCE0040723C /* APIExampleGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleGamesView.swift; sourceTree = "<group>"; };
+		794AAC982DF37BCE0040723C /* APIExampleGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleGamesViewModel.swift; sourceTree = "<group>"; };
+		794AAC9A2DF37BCE0040723C /* APIExampleSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsView.swift; sourceTree = "<group>"; };
+		794AAC9B2DF37BCE0040723C /* APIExampleSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsViewModel.swift; sourceTree = "<group>"; };
+		794AAC9D2DF37BCE0040723C /* TournamentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsView.swift; sourceTree = "<group>"; };
+		794AAC9E2DF37BCE0040723C /* TournamentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsViewModel.swift; sourceTree = "<group>"; };
+		794AACA02DF37BCE0040723C /* TournamentsLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingView.swift; sourceTree = "<group>"; };
+		794AACA12DF37BCE0040723C /* TournamentsLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingViewModel.swift; sourceTree = "<group>"; };
+		794AACC42DF37E130040723C /* SampleLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLogging.swift; sourceTree = "<group>"; };
 		797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDeeplinkService.swift; sourceTree = "<group>"; };
 		79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRewardProvider.swift; sourceTree = "<group>"; };
@@ -62,14 +78,15 @@
 		1CD838332B28CC950031D558 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				79B883C32CE804AF009A7F54 /* ConfigureRewardProviderView.swift */,
-				79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */,
-				79E588AE2C80FFB100CC5506 /* ConvertToCreditProvider.swift */,
-				1CD838342B28CC950031D558 /* SDK_SampleApp.swift */,
 				797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */,
-				797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */,
+				79B883C12CE80447009A7F54 /* ClientRewardProvider.swift */,
+				79B883C32CE804AF009A7F54 /* ConfigureRewardProviderView.swift */,
 				1CD838352B28CC950031D558 /* ConfigureUserView.swift */,
+				79E588AE2C80FFB100CC5506 /* ConvertToCreditProvider.swift */,
+				797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */,
 				1CD838362B28CC950031D558 /* RootView.swift */,
+				794AACC42DF37E130040723C /* SampleLogging.swift */,
+				1CD838342B28CC950031D558 /* SDK_SampleApp.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -77,9 +94,9 @@
 		1CE003982AF3E64A002F03FC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				794AAC952DF37BA60040723C /* API Example */,
 				1CD838332B28CC950031D558 /* Root */,
 				1CE0039E2AF3E64A002F03FC /* Environment.swift */,
-				1CE0039A2AF3E64A002F03FC /* API Example */,
 				1CE0039C2AF3E64A002F03FC /* SwiftUI Example */,
 				1CE003A02AF3E64A002F03FC /* UIKitExample */,
 				1C71DE862AD471A5000A2873 /* Sample-Info.plist */,
@@ -89,14 +106,6 @@
 			);
 			name = Sources;
 			path = ../Sources;
-			sourceTree = "<group>";
-		};
-		1CE0039A2AF3E64A002F03FC /* API Example */ = {
-			isa = PBXGroup;
-			children = (
-				1CE0039B2AF3E64A002F03FC /* APIExample.swift */,
-			);
-			path = "API Example";
 			sourceTree = "<group>";
 		};
 		1CE0039C2AF3E64A002F03FC /* SwiftUI Example */ = {
@@ -148,6 +157,61 @@
 				31CB648459DF69C532B48879 /* Pods-CocoaPodsSample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		794AAC952DF37BA60040723C /* API Example */ = {
+			isa = PBXGroup;
+			children = (
+				794AAC992DF37BCE0040723C /* GYP */,
+				794AAC9C2DF37BCE0040723C /* SYW */,
+				794AACA32DF37BCE0040723C /* Tournaments */,
+			);
+			path = "API Example";
+			sourceTree = "<group>";
+		};
+		794AAC992DF37BCE0040723C /* GYP */ = {
+			isa = PBXGroup;
+			children = (
+				794AAC972DF37BCE0040723C /* APIExampleGamesView.swift */,
+				794AAC982DF37BCE0040723C /* APIExampleGamesViewModel.swift */,
+			);
+			path = GYP;
+			sourceTree = "<group>";
+		};
+		794AAC9C2DF37BCE0040723C /* SYW */ = {
+			isa = PBXGroup;
+			children = (
+				794AAC9A2DF37BCE0040723C /* APIExampleSportsView.swift */,
+				794AAC9B2DF37BCE0040723C /* APIExampleSportsViewModel.swift */,
+			);
+			path = SYW;
+			sourceTree = "<group>";
+		};
+		794AAC9F2DF37BCE0040723C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				794AAC9D2DF37BCE0040723C /* TournamentDetailsView.swift */,
+				794AAC9E2DF37BCE0040723C /* TournamentDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		794AACA22DF37BCE0040723C /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				794AACA02DF37BCE0040723C /* TournamentsLandingView.swift */,
+				794AACA12DF37BCE0040723C /* TournamentsLandingViewModel.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		794AACA32DF37BCE0040723C /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				794AAC9F2DF37BCE0040723C /* Details */,
+				794AACA22DF37BCE0040723C /* Landing */,
+			);
+			path = Tournaments;
 			sourceTree = "<group>";
 		};
 		EE5D9BFC40A24A68A6DB5A0E /* Frameworks */ = {
@@ -273,10 +337,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CD838382B28CC950031D558 /* ConfigureUserView.swift in Sources */,
-				1CE003A72AF3E64A002F03FC /* APIExample.swift in Sources */,
 				1CE003A82AF3E64A002F03FC /* SwiftUIExample.swift in Sources */,
 				79B883C22CE8044A009A7F54 /* ClientRewardProvider.swift in Sources */,
 				1CD838372B28CC950031D558 /* SDK_SampleApp.swift in Sources */,
+				794AACA42DF37BCE0040723C /* APIExampleGamesView.swift in Sources */,
+				794AACA52DF37BCE0040723C /* APIExampleSportsViewModel.swift in Sources */,
+				794AACA62DF37BCE0040723C /* TournamentDetailsView.swift in Sources */,
+				794AACA72DF37BCE0040723C /* APIExampleGamesViewModel.swift in Sources */,
+				794AACA82DF37BCE0040723C /* TournamentsLandingView.swift in Sources */,
+				794AACA92DF37BCE0040723C /* APIExampleSportsView.swift in Sources */,
+				794AACAA2DF37BCE0040723C /* TournamentDetailsViewModel.swift in Sources */,
+				794AACAB2DF37BCE0040723C /* TournamentsLandingViewModel.swift in Sources */,
 				79E588AF2C80FFB100CC5506 /* ConvertToCreditProvider.swift in Sources */,
 				797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */,
 				79B883C42CE804B4009A7F54 /* ConfigureRewardProviderView.swift in Sources */,
@@ -284,6 +355,7 @@
 				797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */,
 				1CE003AA2AF3E64A002F03FC /* UIKitExample.swift in Sources */,
 				1CE003A92AF3E64A002F03FC /* Environment.swift in Sources */,
+				794AACC52DF37E130040723C /* SampleLogging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -163,15 +163,6 @@
       }
     },
     {
-      "identity" : "resolver",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/hmlongco/Resolver",
-      "state" : {
-        "revision" : "47602af1ac8d7952299fbd0bda3cfbd12cf3a8ca",
-        "version" : "1.5.1"
-      }
-    },
-    {
       "identity" : "sdkconfigurations_sdk_ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/zendesk/sdkconfigurations_sdk_ios",
