@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-    s.version          = '3.6.1'
+    s.version          = '0.0.999'
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
