@@ -73,7 +73,7 @@ struct ConfigureUserView: View {
                                                                                        city: city,
                                                                                        state: state,
                                                                                        zip: zip),
-                                                                        dateOfBirth: dateOfBirth))
+                                                                        dateOfBirth: dateOfBirth, metadata: nil))
                         } catch {
                             print("Configure Error: \(error)")
                         }

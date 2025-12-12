@@ -23,26 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/auth0/Auth0.swift.git",
       "state" : {
-        "revision" : "0d9c3f3241e3defad065409ac3a071ee1c5a7e8a",
-        "version" : "2.9.0"
-      }
-    },
-    {
-      "identity" : "commonui_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/commonui_sdk_ios",
-      "state" : {
-        "revision" : "8729e7f4e316b46f6d33f046e663b6eedfe9955a",
-        "version" : "9.0.1"
-      }
-    },
-    {
-      "identity" : "core_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/core_sdk_ios",
-      "state" : {
-        "revision" : "8163d4d67f3aa8954467aa8191ee13cb4f1a2b9e",
-        "version" : "5.0.3"
+        "revision" : "adabc99ad9d4d21232de1a114cec5f3850680a74",
+        "version" : "2.16.0"
       }
     },
     {
@@ -113,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/auth0/JWTDecode.swift.git",
       "state" : {
-        "revision" : "1e153ef009969543191970c66b7c60163c0b4a65",
-        "version" : "3.2.0"
+        "revision" : "36a5ce735a61c4bc119593f43ce2c027b4ca7392",
+        "version" : "3.3.0"
       }
     },
     {
@@ -124,24 +106,6 @@
       "state" : {
         "revision" : "a0bc79961d7be727d258d33d5a6b2f1023270ba1",
         "version" : "1.22.5"
-      }
-    },
-    {
-      "identity" : "messaging_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/messaging_sdk_ios",
-      "state" : {
-        "revision" : "4dbb16d26b90452c1d41cba8e8dc81a1bcea7f1e",
-        "version" : "6.0.1"
-      }
-    },
-    {
-      "identity" : "messagingapi_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/messagingapi_sdk_ios",
-      "state" : {
-        "revision" : "2f21e014a1f284edf484faf39b2b6fe377ec8c64",
-        "version" : "6.0.0"
       }
     },
     {
@@ -163,39 +127,12 @@
       }
     },
     {
-      "identity" : "sdkconfigurations_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/sdkconfigurations_sdk_ios",
-      "state" : {
-        "revision" : "fec7b8bf3d85cb895a0820a2f9d102f9d6ba3070",
-        "version" : "4.0.0"
-      }
-    },
-    {
       "identity" : "simplekeychain",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/auth0/SimpleKeychain.git",
       "state" : {
-        "revision" : "b694f155907b189bc82e93586695a26f558c742f",
-        "version" : "1.2.0"
-      }
-    },
-    {
-      "identity" : "support_providers_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/support_providers_sdk_ios",
-      "state" : {
-        "revision" : "16da780d8a0aa905b3935eee7836b9a0ee276597",
-        "version" : "8.0.3"
-      }
-    },
-    {
-      "identity" : "support_sdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zendesk/support_sdk_ios",
-      "state" : {
-        "revision" : "44cf26111bf0bc608a2474578b3d506793eef483",
-        "version" : "8.0.3"
+        "revision" : "776c4a6db74d5c6c143974be91c383680d468630",
+        "version" : "1.3.0"
       }
     },
     {
@@ -203,8 +140,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
       "state" : {
-        "revision" : "564597ad2fe2513a94dd8f3ba27ea2ff4be3cb37",
-        "version" : "1.28.0"
+        "revision" : "c169a5744230951031770e27e475ff6eefe51f9d",
+        "version" : "1.33.3"
       }
     }
   ],
