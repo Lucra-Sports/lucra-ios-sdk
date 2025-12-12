@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "4.2.0"
+let version = "4.2.1"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
@@ -14,7 +14,6 @@ let package = Package(
         .library(name: "LucraSDK", targets: ["LucraSDK", "LucraCore"])
     ],
     dependencies: [
-        .package(url: "https://github.com/zendesk/support_sdk_ios", .upToNextMajor(from: "8.0.0")),
         .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0"))
     ],
     targets: [
@@ -24,25 +23,24 @@ let package = Package(
                 "LucraSDK",
                 "MobileIntelligence",
                 "GeoComplySDK",
-                .product(name: "Auth0", package: "Auth0.swift"),
-                .product(name: "ZendeskSupportSDK", package: "support_sdk_ios")
+                .product(name: "Auth0", package: "Auth0.swift")
             ],
             path: "LucraSDKTarget"
         ),
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "b61fa97755a9ac2f0dfd412f4503235f60ea89c5a5a48f27721c46ff7c1a0144"
+            checksum: "b321be97f3161af753d185040758eab547bac9de5d38b85b78fd0b4d1fced0de"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "e485f89552d445c6b2e8f9fbbffa0c90001a3be89bea22d97473fb272d711188"
+            checksum: "a2f95b5921be51664556a99a193df9af08b59f3c75562a109d53ca25723855e5"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "6fbd90675ab757688d30533fb79edde75632a72bafb1dc1b996db48dfc8f87e7"
+            checksum: "f085b2485b9d07578c9dbe9afd4d0e6303187d2592237431bae83de273418e8a"
         )
     ]
 )
