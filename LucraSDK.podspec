@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-    s.version          = '4.2.0'
+    s.version          = '4.2.1'
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
     s.swift_version     = '5.8'
 
     s.ios.deployment_target  = '15.0'
-    s.dependency 'ZendeskSupportSDK'
     s.dependency 'Auth0'
  
 end
