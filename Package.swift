@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "4.2.1"
+let version = "4.3.0"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
@@ -30,17 +30,17 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "b321be97f3161af753d185040758eab547bac9de5d38b85b78fd0b4d1fced0de"
+            checksum: "62d3b6cfb59e5161727f6d8e6f2b8032ed3aabb6974fca026773a6ff7f4e44a5"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "a2f95b5921be51664556a99a193df9af08b59f3c75562a109d53ca25723855e5"
+            checksum: "22bc88cc9a156288f37f09a8812082ae09cae3c630af54d1e51f4a11b9cbb6ab"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "f085b2485b9d07578c9dbe9afd4d0e6303187d2592237431bae83de273418e8a"
+            checksum: "fbb497f43f0786d51a083b99270ba79f4fc8a6e22715a1fd945c76d19d615c94"
         )
     ]
 )
