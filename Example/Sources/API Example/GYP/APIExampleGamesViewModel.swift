@@ -35,13 +35,15 @@ class APIExampleGamesViewModel: ObservableObject {
     func loadMatchup(matchupId: String) {
         Task { @MainActor [weak self] in
             guard let self else { return }
-            do {
-                let matchup = try await lucraClient.api.getRecreationalGamesMatchup(matchupId: matchupId)
-                
+            
+            let result = await lucraClient.api.getRecreationalGamesMatchup(matchupId: matchupId)
+            
+            switch result {
+            case .success(let matchup):
                 if let index = matchups.firstIndex(where: { $0.lucraMatchupId == matchupId }) {
                     matchups[index].fullLucraMatchup = matchup
                 }
-            } catch let error {
+            case .failure(let error):
                 self.errorMessage = error.localizedDescription
             }
         }
@@ -55,8 +57,14 @@ class APIExampleGamesViewModel: ObservableObject {
             Task { @MainActor [weak self] in
                 guard let self else { return }
                 do {
-                    let matchupId = try await lucraClient.api.createRecreationalGame(gameTypeId: "DARTS", atStake: .init(cashReward: wagerAmount), playStyle: .groupVsGroup)
-                    createClientMatchup(lucraMatchupId: matchupId)
+                    let result = await lucraClient.api.createRecreationalGame(gameTypeId: "DARTS", atStake: .init(cashReward: wagerAmount), playStyle: .groupVsGroup)
+                    switch result {
+                    case .success(let matchup):
+                        createClientMatchup(lucraMatchupId: matchup)
+                    case .failure(let error):
+                        self.errorMessage = error.localizedDescription
+                    }
+                    
                 } catch let userError as UserStateError {
                     switch userError {
                     case .notInitialized:
