@@ -20,11 +20,16 @@ class APIExampleSportsViewModel: ObservableObject {
         Task { @MainActor [weak self] in
             guard let self else { return }
             do {
-                self.matchup = try await lucraClient.api.matchup(for: contestId)
-            } catch let error {
-                print(error.localizedDescription)
+                let result = await lucraClient.api.matchup(for: contestId)
+                switch result {
+                case .success(let success):
+                    self.matchup = success
+                case .failure(let failure):
+                    print(failure)
+                }
             }
         }
     }
     
 }
+

@@ -10,8 +10,7 @@ import SwiftUI
 
 @main
 struct SDK_SampleApp: App {
-    @StateObject private var lucraClient: LucraClient = .init(config: .init(environment: .init(apiURL: lucraAPIURL,
-                                                                                               apiKey: lucraAPIKey,
+    @StateObject private var lucraClient: LucraClient = .init(config: .init(environment: .init(apiKey: lucraAPIKey,
                                                                                                environment: lucraEnvironment,
                                                                                                urlScheme: lucraURLScheme,
                                                                                                merchantID: lucraMerchantID)))

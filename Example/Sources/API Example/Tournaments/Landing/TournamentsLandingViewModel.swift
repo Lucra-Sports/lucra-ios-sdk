@@ -31,12 +31,23 @@ public class TournamentsLandingViewModel: ObservableObject {
             
             do {
 				if let id = id {
-					if let tournament = try await lucraClient.api.tournamentsMatchup(for: id) {
-						self.tournaments = [tournament]
-					}
-					
+                    
+                    let result = try await lucraClient.api.tournamentsMatchup(for: id)
+                    
+                    switch result {
+                    case .success(let tournament):
+                        self.tournaments = [tournament]
+                    case .failure(let error):
+                        self.errorDetails = error.localizedDescription
+                    }
 				} else {
-					self.tournaments = try await lucraClient.api.getRecommendedTournaments()
+                    let result = await lucraClient.api.getRecommendedTournaments()
+                    switch result {
+                    case .success(let tournaments):
+                        self.tournaments = tournaments
+                    case .failure(let error):
+                        self.errorDetails = error.localizedDescription
+                    }
 				}
             } catch {
                 self.errorDetails = error.localizedDescription
@@ -51,7 +62,7 @@ public class TournamentsLandingViewModel: ObservableObject {
             defer { joinTournamentTask = nil }
             
             do {
-                try await lucraClient.api.joinTournament(id: tournament.id)
+                await lucraClient.api.joinTournament(matchupId: tournament.id)
                 loadTournaments()
             } catch {
                 self.errorDetails = error.localizedDescription
