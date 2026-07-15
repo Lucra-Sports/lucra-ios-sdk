@@ -23,6 +23,8 @@
 		794AACA92DF37BCE0040723C /* APIExampleSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC9A2DF37BCE0040723C /* APIExampleSportsView.swift */; };
 		794AACAA2DF37BCE0040723C /* TournamentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AAC9E2DF37BCE0040723C /* TournamentDetailsViewModel.swift */; };
 		794AACAB2DF37BCE0040723C /* TournamentsLandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACA12DF37BCE0040723C /* TournamentsLandingViewModel.swift */; };
+		7A4D12042E250A010040723C /* MiniGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D12012E250A010040723C /* MiniGamesView.swift */; };
+		7A4D12052E250A010040723C /* MiniGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D12022E250A010040723C /* MiniGamesViewModel.swift */; };
 		794AACC52DF37E130040723C /* SampleLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACC42DF37E130040723C /* SampleLogging.swift */; };
 		797322DE2BF40C300046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DC2BF40C300046AF11 /* Decimal+Extensions.swift */; };
 		797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DD2BF40C300046AF11 /* ClientDeeplinkService.swift */; };
@@ -52,6 +54,8 @@
 		794AAC9A2DF37BCE0040723C /* APIExampleSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsView.swift; sourceTree = "<group>"; };
 		794AAC9B2DF37BCE0040723C /* APIExampleSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsViewModel.swift; sourceTree = "<group>"; };
 		794AAC9D2DF37BCE0040723C /* TournamentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsView.swift; sourceTree = "<group>"; };
+		7A4D12012E250A010040723C /* MiniGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamesView.swift; sourceTree = "<group>"; };
+		7A4D12022E250A010040723C /* MiniGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamesViewModel.swift; sourceTree = "<group>"; };
 		794AAC9E2DF37BCE0040723C /* TournamentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsViewModel.swift; sourceTree = "<group>"; };
 		794AACA02DF37BCE0040723C /* TournamentsLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingView.swift; sourceTree = "<group>"; };
 		794AACA12DF37BCE0040723C /* TournamentsLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingViewModel.swift; sourceTree = "<group>"; };
@@ -163,10 +167,20 @@
 			isa = PBXGroup;
 			children = (
 				794AAC992DF37BCE0040723C /* GYP */,
+				7A4D12032E250A010040723C /* MiniGames */,
 				794AAC9C2DF37BCE0040723C /* SYW */,
 				794AACA32DF37BCE0040723C /* Tournaments */,
 			);
 			path = "API Example";
+			sourceTree = "<group>";
+		};
+		7A4D12032E250A010040723C /* MiniGames */ = {
+			isa = PBXGroup;
+			children = (
+				7A4D12012E250A010040723C /* MiniGamesView.swift */,
+				7A4D12022E250A010040723C /* MiniGamesViewModel.swift */,
+			);
+			path = MiniGames;
 			sourceTree = "<group>";
 		};
 		794AAC992DF37BCE0040723C /* GYP */ = {
@@ -348,6 +362,8 @@
 				794AACA92DF37BCE0040723C /* APIExampleSportsView.swift in Sources */,
 				794AACAA2DF37BCE0040723C /* TournamentDetailsViewModel.swift in Sources */,
 				794AACAB2DF37BCE0040723C /* TournamentsLandingViewModel.swift in Sources */,
+				7A4D12042E250A010040723C /* MiniGamesView.swift in Sources */,
+				7A4D12052E250A010040723C /* MiniGamesViewModel.swift in Sources */,
 				79E588AF2C80FFB100CC5506 /* ConvertToCreditProvider.swift in Sources */,
 				797322DF2BF40C300046AF11 /* ClientDeeplinkService.swift in Sources */,
 				79B883C42CE804B4009A7F54 /* ConfigureRewardProviderView.swift in Sources */,

@@ -99,6 +99,9 @@ struct ExampleList: View {
                         NavigationLink("Tournaments") {
                             TournamentsLandingView(lucraClient: lucraClient)
                         }
+                        NavigationLink("Mini Games") {
+                            MiniGamesView(lucraClient: lucraClient)
+                        }
                     }
                 }
                 NavigationLink("Configure User") {
