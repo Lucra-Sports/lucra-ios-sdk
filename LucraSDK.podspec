@@ -23,6 +23,5 @@ Pod::Spec.new do |s|
     s.swift_version     = '5.8'
 
     s.ios.deployment_target  = '15.0'
-    s.dependency 'Auth0'
- 
+
 end

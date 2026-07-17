@@ -13,34 +13,30 @@ let package = Package(
     products: [
         .library(name: "LucraSDK", targets: ["LucraSDK", "LucraCore"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/auth0/Auth0.swift.git", .upToNextMajor(from: "2.0.0"))
-    ],
     targets: [
         .target(
             name: "LucraCore",
             dependencies: [
                 "LucraSDK",
                 "MobileIntelligence",
-                "GeoComplySDK",
-                .product(name: "Auth0", package: "Auth0.swift")
+                "GeoComplySDK"
             ],
             path: "LucraSDKTarget"
         ),
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "c1d47bf27bde7b295ca026ed000fec63397e09f742a582ea8c2897aca0e5b3c3"
+            checksum: "421be6f1278ee58fa4663044c562b7ced69f753bb0e83c252cfc9e430be4f66f"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "deaa70fa1544193a921397cb29d8c7814a400e45bac03d99cbfbc2c62bca4726"
+            checksum: "016e12e396325d406cbbfd067b0a2c00061d4a643d1e230272405848cdddb051"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "af628b5aaad3a3fdab981d2965a5d5011e4c421bfac30528a035ce260056c3bc"
+            checksum: "82434414836b0b6a1435162b9dac478263cdfff7949ba03480863e3dbdf9311e"
         )
     ]
 )
