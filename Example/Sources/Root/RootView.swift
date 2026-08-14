@@ -114,9 +114,13 @@ struct ExampleList: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Logout") {
-                    Task {
-                        await lucraClient.logout()
+                if lucraClient.isResolvingAuthState {
+                    ProgressView()
+                } else {
+                    Button("Logout") {
+                        Task {
+                            await lucraClient.logout()
+                        }
                     }
                 }
             }

@@ -9,71 +9,55 @@ import LucraSDK
 import SwiftUI
 
 public class TournamentsLandingViewModel: ObservableObject {
-    
+
     @ObservedObject private(set) var lucraClient: LucraClient
     @Published private(set) var tournaments: [TournamentsMatchup]
     @Published private(set) var isLoading: Bool = false
     @Published private(set) var errorDetails: String?
-    
+
     @Published private(set) var joinTournamentTask: Task<(), Never>?
-    
+
     init(lucraClient: LucraClient) {
         self.tournaments = []
         self.lucraClient = lucraClient
     }
-    
-	public func loadTournaments(with id: String? = nil) {
+
+    public func loadTournaments() {
         isLoading = true
         errorDetails = nil
-        
+
         Task {
             defer { isLoading = false }
-            
-            do {
-				if let id = id {
-                    
-                    let result = try await lucraClient.api.tournamentsMatchup(for: id)
-                    
-                    switch result {
-                    case .success(let tournament):
-                        self.tournaments = [tournament]
-                    case .failure(let error):
-                        self.errorDetails = error.localizedDescription
-                    }
-				} else {
-                    let result = await lucraClient.api.getRecommendedTournaments()
-                    switch result {
-                    case .success(let tournaments):
-                        self.tournaments = tournaments
-                    case .failure(let error):
-                        self.errorDetails = error.localizedDescription
-                    }
-				}
-            } catch {
+
+            let result = await lucraClient.api.getRecommendedTournaments(includePrivateViewableTournaments: true)
+
+            switch result {
+            case .success(let tournaments):
+                self.tournaments = tournaments
+            case .failure(let error):
                 self.errorDetails = error.localizedDescription
-                print(error.localizedDescription)
             }
-            
         }
     }
-    
+
     public func joinTournament(tournament: TournamentsMatchup) {
         joinTournamentTask = Task {
             defer { joinTournamentTask = nil }
-            
-            do {
-                await lucraClient.api.joinTournament(matchupId: tournament.id)
+
+            let result = await lucraClient.api.joinTournament(matchupId: tournament.id)
+
+            switch result {
+            case .success:
                 loadTournaments()
-            } catch {
+            case .failure(let error):
                 self.errorDetails = error.localizedDescription
-                print(error.localizedDescription)
             }
         }
     }
-    
+
     public func isUserInTournament(tournament: TournamentsMatchup) -> Bool {
         guard let username = lucraClient.user?.username else { return false }
         return tournament.participants.contains(where: { $0.username == username })
     }
-    
+
 }

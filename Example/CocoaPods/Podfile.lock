@@ -1,7 +1,4 @@
 PODS:
-  - Auth0 (3.0.0):
-    - JWTDecode (= 4.0)
-    - SimpleKeychain (= 1.3.0)
   - Firebase (11.15.0):
     - Firebase/Core (= 11.15.0)
   - Firebase/Core (11.15.0):
@@ -93,16 +90,13 @@ PODS:
   - GoogleUtilities/UserDefaults (8.1.1):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - JWTDecode (4.0.0)
-  - LucraSDK (5.7.0):
-    - Auth0
+  - LucraSDK (5.8.0)
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
     - nanopb/encode (= 3.30910.0)
   - nanopb/decode (3.30910.0)
   - nanopb/encode (3.30910.0)
   - PromisesObjC (2.4.1)
-  - SimpleKeychain (1.3.0)
 
 DEPENDENCIES:
   - Firebase
@@ -111,7 +105,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Auth0
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -121,17 +114,14 @@ SPEC REPOS:
     - GoogleAdsOnDeviceConversion
     - GoogleAppMeasurement
     - GoogleUtilities
-    - JWTDecode
     - nanopb
     - PromisesObjC
-    - SimpleKeychain
 
 EXTERNAL SOURCES:
   LucraSDK:
     :podspec: "../../LucraSDK.podspec"
 
 SPEC CHECKSUMS:
-  Auth0: 11126d6490341de7955527046d8959bda33a9284
   Firebase: d99ac19b909cd2c548339c2241ecd0d1599ab02e
   FirebaseAnalytics: 6433dfd311ba78084fc93bdfc145e8cb75740eae
   FirebaseCore: efb3893e5b94f32b86e331e3bd6dadf18b66568e
@@ -141,11 +131,9 @@ SPEC CHECKSUMS:
   GoogleAdsOnDeviceConversion: 2be6297a4f048459e0ae17fad9bfd2844e10cf64
   GoogleAppMeasurement: 700dce7541804bec33db590a5c496b663fbe2539
   GoogleUtilities: 4f2618a4a1e762a1ee134a1e2323bba9843e06da
-  JWTDecode: a420459e8c73d7840cb6a6a7a1eb89c894d58499
-  LucraSDK: 80e5cfe03acd3492180b23dc5ce7c0285d376923
+  LucraSDK: 1f300e0248cbea5203f7bb8715766283a76f484a
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: 752c3227f599e3467650e47ea36f433eeb10c273
-  SimpleKeychain: 9c0f3ca8458fed74e01db864d181c5cbe278603e
 
 PODFILE CHECKSUM: 8892cf0ee731036547e6d08f2f58b8808b902ceb
 
