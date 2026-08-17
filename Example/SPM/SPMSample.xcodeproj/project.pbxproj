@@ -25,8 +25,6 @@
 		794AACBF2DF37D150040723C /* TournamentDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACB32DF37D150040723C /* TournamentDetailsViewModel.swift */; };
 		794AACC02DF37D150040723C /* APIExampleGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACAC2DF37D150040723C /* APIExampleGamesView.swift */; };
 		794AACC12DF37D150040723C /* APIExampleSportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACAF2DF37D150040723C /* APIExampleSportsView.swift */; };
-		7A4D11042E250A010040723C /* MiniGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D11012E250A010040723C /* MiniGamesView.swift */; };
-		7A4D11052E250A010040723C /* MiniGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D11022E250A010040723C /* MiniGamesViewModel.swift */; };
 		794AACC32DF37D210040723C /* SampleLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AACC22DF37D210040723C /* SampleLogging.swift */; };
 		797322DB2BF406350046AF11 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797322DA2BF406350046AF11 /* Decimal+Extensions.swift */; };
 		7987833B2BEB00D40049AF52 /* ClientDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7987833A2BEB00D40049AF52 /* ClientDeeplinkService.swift */; };
@@ -34,6 +32,8 @@
 		79E588AD2C80F84200CC5506 /* ConvertToCreditProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */; };
 		79F9463A2D123C0F00FBD0CE /* ClientRewardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F946382D123C0F00FBD0CE /* ClientRewardProvider.swift */; };
 		79F9463B2D123C0F00FBD0CE /* ConfigureRewardProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F946392D123C0F00FBD0CE /* ConfigureRewardProviderView.swift */; };
+		7A4D11042E250A010040723C /* MiniGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D11012E250A010040723C /* MiniGamesView.swift */; };
+		7A4D11052E250A010040723C /* MiniGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D11022E250A010040723C /* MiniGamesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +54,6 @@
 		794AACAF2DF37D150040723C /* APIExampleSportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsView.swift; sourceTree = "<group>"; };
 		794AACB02DF37D150040723C /* APIExampleSportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIExampleSportsViewModel.swift; sourceTree = "<group>"; };
 		794AACB22DF37D150040723C /* TournamentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsView.swift; sourceTree = "<group>"; };
-		7A4D11012E250A010040723C /* MiniGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamesView.swift; sourceTree = "<group>"; };
-		7A4D11022E250A010040723C /* MiniGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamesViewModel.swift; sourceTree = "<group>"; };
 		794AACB32DF37D150040723C /* TournamentDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentDetailsViewModel.swift; sourceTree = "<group>"; };
 		794AACB52DF37D150040723C /* TournamentsLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingView.swift; sourceTree = "<group>"; };
 		794AACB62DF37D150040723C /* TournamentsLandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsLandingViewModel.swift; sourceTree = "<group>"; };
@@ -65,6 +63,8 @@
 		79E588AC2C80F84200CC5506 /* ConvertToCreditProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToCreditProvider.swift; sourceTree = "<group>"; };
 		79F946382D123C0F00FBD0CE /* ClientRewardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRewardProvider.swift; sourceTree = "<group>"; };
 		79F946392D123C0F00FBD0CE /* ConfigureRewardProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureRewardProviderView.swift; sourceTree = "<group>"; };
+		7A4D11012E250A010040723C /* MiniGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamesView.swift; sourceTree = "<group>"; };
+		7A4D11022E250A010040723C /* MiniGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGamesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

@@ -25,9 +25,12 @@ struct TournamentsLandingView: View {
 				TextField("Tournament ID", text: $searchID)
 					.textFieldStyle(RoundedBorderTextFieldStyle())
 					.padding(.horizontal)
-				
-				Button("Search") {
-					viewModel.loadTournaments(with: searchID.isEmpty ? nil : searchID)
+
+				NavigationLink {
+					TournamentDetailsView(lucraClient: viewModel.lucraClient, matchupId: searchID)
+				} label: {
+					Text("Search")
+						.lucraFont(.h8)
 				}
 				.lucraButtonStyle(.secondary)
 				.disabled(viewModel.isLoading || searchID.isEmpty)
@@ -60,16 +63,16 @@ struct TournamentsLandingView: View {
 					ForEach(viewModel.tournaments) { tournament in
 						VStack(alignment: .leading, spacing: 8) {
 							TournamentCard(tournament: tournament)
-							
-							if viewModel.isUserInTournament(tournament: tournament) {
-								NavigationLink(destination: TournamentDetailsView(lucraClient: viewModel.lucraClient, tournament: tournament)) {
+
+							if viewModel.isUserInTournament(tournament: tournament) || tournament.isPrivate {
+								NavigationLink(destination: TournamentDetailsView(lucraClient: viewModel.lucraClient, matchupId: tournament.id)) {
 									Text("View Tournament")
 										.lucraFont(.h8)
 								}
 								.lucraButtonStyle(.primary)
 							}
-							
-							if !viewModel.isUserInTournament(tournament: tournament) {
+
+							if !viewModel.isUserInTournament(tournament: tournament) && !tournament.isPrivate {
 								Button("Join Tournament") {
 									viewModel.joinTournament(tournament: tournament)
 								}
@@ -119,11 +122,19 @@ fileprivate struct TournamentCard: View {
     var tournamentDetails: some View {
         HStack(alignment: .center) {
             VStack(alignment: .leading) {
-                Text(tournament.title)
-                    .multilineTextAlignment(.leading)
-                    .foregroundColor(.onSurface)
-                    .lucraFont(.h2)
-                
+                HStack(spacing: 6) {
+                    if tournament.isPrivate {
+                        Image(systemName: "lock.fill")
+                            .foregroundColor(.onSurface)
+                            .font(.caption)
+                    }
+
+                    Text(tournament.title)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.onSurface)
+                        .lucraFont(.h2)
+                }
+
                 HStack {
                     HStack(spacing: 4) {
                         Image("expiration_time")
@@ -141,7 +152,7 @@ fileprivate struct TournamentCard: View {
                             .foregroundColor(.onSurface)
                             .frame(width: 18, height: 18)
                         
-                        Text("\(tournament.participants.count) Participants")
+                        Text("\(tournament.totalParticipants) Participants")
                             .foregroundColor(.onSurface)
                             .lucraFont(.h8)
                     }

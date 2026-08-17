@@ -10,11 +10,15 @@ import SwiftUI
 
 @main
 struct SDK_SampleApp: App {
+    private static let sampleAppearance: ClientTheme = .init(lightTheme: DynamicColorSet(),
+                                                             darkTheme: DynamicColorSet())
+
     @StateObject private var lucraClient: LucraClient = .init(config: .init(environment: .init(apiKey: lucraAPIKey,
                                                                                                environment: lucraEnvironment,
                                                                                                urlScheme: lucraURLScheme,
-                                                                                               merchantID: lucraMerchantID)))
-    
+                                                                                               merchantID: lucraMerchantID),
+                                                                           appearance: SDK_SampleApp.sampleAppearance))
+
     init() {
         registerLoggingService()
     }
