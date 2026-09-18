@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'LucraSDK'
-    s.version          = '6.0.0'
+    s.version          = '6.0.1'
     s.summary          = 'LucraSDK for iOS'
 
     s.description      = <<-DESC
@@ -19,9 +19,11 @@ Pod::Spec.new do |s|
     s.preserve_paths = "#{s.module_name}.xcframework/*", "MobileIntelligence.xcframework/*", "GeoComplySDK.xcframework/*"
 
     s.cocoapods_version = ">= 1.13.0"
-    
+
     s.swift_version     = '5.8'
 
     s.ios.deployment_target  = '15.0'
+
+    s.dependency 'Sentry', '~> 8.58'
 
 end

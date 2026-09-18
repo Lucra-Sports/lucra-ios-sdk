@@ -194,7 +194,7 @@ public class TabBarViewController: UITabBarController {
 
     func setupViewControllers() {
         let firstVC = UIKitSampleViewController(lucraClient: lucraClient)
-        let secondVC: UIViewController = lucraClient.ui.flow(.publicFeed, hideCloseButton: true)
+        let secondVC: UIViewController = lucraClient.ui.flowViewController(.publicFeed, hideCloseButton: true)
 
 
             firstVC.tabBarItem = UITabBarItem(title: "Sheet", image: UIImage(systemName: "square.on.square.intersection.dashed"),selectedImage: UIImage(systemName: "square.on.square.intersection.dashed.fill"))
