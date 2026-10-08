@@ -98,11 +98,6 @@ struct SwiftUIExample: View {
                     initLucraFlow(.publicFeed)
                 }
 
-                // My Matchups
-                button(title: LucraFlow.myMatchups.displayName) {
-                    initLucraFlow(.myMatchups)
-                }
-
                 // Tournament Details
                 button(title: LucraFlow.tournamentDetails(matchupId: "").displayName) {
                     tournamentDetailsPopupPresented = true
