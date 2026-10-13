@@ -15,8 +15,8 @@ diagnostics, and expects the host app to provide a single, matching copy of the 
 - **Swift Package Manager / CocoaPods:** integrating LucraSDK as documented brings Sentry in
   automatically — the Swift package links the `Sentry-Dynamic` product and the podspec declares
   the `Sentry` dependency. No extra setup is required.
-- **Version alignment:** LucraSDK ships **Sentry 8.58.4**. If your app already uses Sentry, align
-  it to **8.58.4 or newer within 8.x** and link the dynamic `Sentry-Dynamic` product (not the
+- **Version alignment:** LucraSDK ships **Sentry 8.58.0**. If your app already uses Sentry, align
+  it to **8.58.0 or newer within 8.x** and link the dynamic `Sentry-Dynamic` product (not the
   static `Sentry`). An older/next-major pin fails dependency resolution before building; a static
   Sentry alongside Lucra's dynamic one, or a second copy in the process, crashes at launch.
 - **CocoaPods linkage:** LucraSDK vendors dynamic xcframeworks, so keep `use_frameworks!`

@@ -90,7 +90,7 @@ PODS:
   - GoogleUtilities/UserDefaults (8.1.1):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - LucraSDK (6.0.2):
+  - LucraSDK (7.0.1):
     - Sentry (~> 8.58)
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
@@ -136,7 +136,7 @@ SPEC CHECKSUMS:
   GoogleAdsOnDeviceConversion: 2be6297a4f048459e0ae17fad9bfd2844e10cf64
   GoogleAppMeasurement: 700dce7541804bec33db590a5c496b663fbe2539
   GoogleUtilities: 4f2618a4a1e762a1ee134a1e2323bba9843e06da
-  LucraSDK: 5555c8cc509904450c3a85a2895eb3ef92260ad9
+  LucraSDK: 69b5e65bd78fec3f9b8d5e68a252fe5ebb6d4c6f
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: 752c3227f599e3467650e47ea36f433eeb10c273
   Sentry: 5321d74bdd28d6f6f8beaa1ca06f1fdc746bff49

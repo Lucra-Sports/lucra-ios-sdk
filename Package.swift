@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "7.0.0"
+let version = "7.0.1"
 
 let hostedPackageURL = "https://lucra-sdk.s3.amazonaws.com/ios/spm/\(version)"
 
@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "LucraSDK", targets: ["LucraSDK", "LucraCore"])
     ],
     dependencies: [
-        .package(url: "https://github.com/getsentry/sentry-cocoa", from: "8.58.4")
+        .package(url: "https://github.com/getsentry/sentry-cocoa", from: "8.58.0")
     ],
     targets: [
         .target(
@@ -30,17 +30,17 @@ let package = Package(
         .binaryTarget(
             name: "LucraSDK",
             url: "\(hostedPackageURL)/LucraSDK.xcframework.zip",
-            checksum: "09eab7da210ffb0ad6c7e8346fd664ad4915f3bc9504ebc0035bcaefa2b550b7"
+            checksum: "bc80cdf3f8f47f705e6efd4d75701d5614dc2c0ae0ed26d1a38d32bf17d5dfea"
         ),
         .binaryTarget(
             name: "MobileIntelligence",
             url: "\(hostedPackageURL)/MobileIntelligence.xcframework.zip",
-            checksum: "d93a04f605bcfe917d7731de07227bc99596edc84ebe6d9b64594974d984ff44"
+            checksum: "d0899c2377e7943ae467ac5d6c2234304650dd3947e3e4c7de3b6613ca5fa9fc"
         ),
         .binaryTarget(
             name: "GeoComplySDK",
             url: "\(hostedPackageURL)/GeoComplySDK.xcframework.zip",
-            checksum: "b883772f7ccabf56d6cf389c8342632a0662e9775ab967a630227365638ce807"
+            checksum: "b823ed2c0e4c65b8dd1968ce11f92962be18d91e1526a1a550f1919dc19f00cb"
         )
     ]
 )
