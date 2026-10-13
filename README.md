@@ -8,20 +8,17 @@ Explore more via the [example projects](https://github.com/Lucra-Sports/lucra-io
 
 # Dependencies
 
-LucraSDK dynamically links [Sentry](https://github.com/getsentry/sentry-cocoa) for
-diagnostics, and expects the host app to provide a single, matching copy of the dynamic
-`Sentry.framework` at runtime.
+LucraSDK uses [Sentry](https://github.com/getsentry/sentry-cocoa) for its own diagnostics. It never
+calls `SentrySDK.start`, installs no crash handler, and sends nothing to your Sentry project.
 
-- **Swift Package Manager / CocoaPods:** integrating LucraSDK as documented brings Sentry in
-  automatically — the Swift package links the `Sentry-Dynamic` product and the podspec declares
-  the `Sentry` dependency. No extra setup is required.
-- **Version alignment:** LucraSDK ships **Sentry 8.58.0**. If your app already uses Sentry, align
-  it to **8.58.0 or newer within 8.x** and link the dynamic `Sentry-Dynamic` product (not the
-  static `Sentry`). An older/next-major pin fails dependency resolution before building; a static
-  Sentry alongside Lucra's dynamic one, or a second copy in the process, crashes at launch.
-- **CocoaPods linkage:** LucraSDK vendors dynamic xcframeworks, so keep `use_frameworks!`
-  (dynamic) in your `Podfile` and do not set `:linkage => :static`. Static linkage builds but
-  the app crashes at launch with `Library not loaded: @rpath/Sentry.framework/Sentry`.
+The framework itself does not link Sentry. The code that talks to Sentry ships as source and compiles
+inside your app against the Sentry your project already resolves, so there is only ever one copy of
+Sentry in the process.
 
-If Sentry is missing, the app terminates during launch with a dynamic-linker error:
-`Library not loaded: @rpath/Sentry.framework/Sentry`.
+- **Swift Package Manager:** add the product that matches how your app links Sentry. `LucraSDK` links
+  Sentry's `Sentry-Dynamic` product and is right for apps with no Sentry of their own or with
+  `Sentry-Dynamic`; `LucraSDK-StaticSentry` links the static `Sentry` product. Any sentry-cocoa from
+  8.58.0 through 9.x resolves.
+- **CocoaPods:** `pod 'LucraSDK'` compiles the telemetry sources into your Pods project with whichever
+  linkage your `use_frameworks!` line sets, static included, with no Podfile hook. The pod declares
+  `Sentry >= 8.58.0, < 9.0`.

@@ -91,7 +91,12 @@ PODS:
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - LucraSDK (7.0.1):
-    - Sentry (~> 8.58)
+    - LucraSDK/Core (= 7.0.1)
+    - LucraSDK/Telemetry (= 7.0.1)
+  - LucraSDK/Core (7.0.1)
+  - LucraSDK/Telemetry (7.0.1):
+    - LucraSDK/Core
+    - Sentry (< 9.0, >= 8.58.0)
   - nanopb (3.30910.0):
     - nanopb/decode (= 3.30910.0)
     - nanopb/encode (= 3.30910.0)
@@ -136,11 +141,11 @@ SPEC CHECKSUMS:
   GoogleAdsOnDeviceConversion: 2be6297a4f048459e0ae17fad9bfd2844e10cf64
   GoogleAppMeasurement: 700dce7541804bec33db590a5c496b663fbe2539
   GoogleUtilities: 4f2618a4a1e762a1ee134a1e2323bba9843e06da
-  LucraSDK: 69b5e65bd78fec3f9b8d5e68a252fe5ebb6d4c6f
+  LucraSDK: 1795bc5a9c993f0d587b4839830b999b61fc091b
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   PromisesObjC: 752c3227f599e3467650e47ea36f433eeb10c273
   Sentry: 5321d74bdd28d6f6f8beaa1ca06f1fdc746bff49
 
-PODFILE CHECKSUM: 8892cf0ee731036547e6d08f2f58b8808b902ceb
+PODFILE CHECKSUM: 39eb761362e9a3c5f16d21e6e62516cce8123a64
 
 COCOAPODS: 1.16.2
