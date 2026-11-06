@@ -13,19 +13,18 @@ struct RootView: View {
     @State private var clientRewardProvider = ClientRewardProvider()
     @State private var navigate: Bool = false
     @EnvironmentObject private var lucraClient: LucraClient
-    @State var convertToCreditProvider: ConvertToCreditProvider? = ExampleC2CProvider()
 
     var body: some View {
         Group {
             if #available(iOS 16.0, *) {
                 NavigationStack {
-                    ExampleList(lucraClient: lucraClient, convertToCreditProvider: convertToCreditProvider)
+                    ExampleList(lucraClient: lucraClient)
                 }
                 .environmentObject(lucraClient)
                 .environmentObject(clientRewardProvider)
             } else {
                 NavigationView {
-                    ExampleList(lucraClient: lucraClient, convertToCreditProvider: convertToCreditProvider)
+                    ExampleList(lucraClient: lucraClient)
                 }
                 .environmentObject(lucraClient)
                 .environmentObject(clientRewardProvider)
@@ -33,7 +32,6 @@ struct RootView: View {
         }
         .lucraFlow($flow, client: lucraClient)
         .onAppear {
-            lucraClient.registerConvertToCreditProvider(convertToCreditProvider)
             lucraClient.registerRewardProvider(clientRewardProvider)
             lucraClient.registerDeeplinkProvider({ link in
                 switch await ClientDeeplinkService().pack(deeplink: link) {
@@ -73,7 +71,6 @@ struct RootView: View {
 
 struct ExampleList: View {
     @ObservedObject var lucraClient: LucraClient
-    @State var convertToCreditProvider: ConvertToCreditProvider?
     
     var body: some View {
         List {

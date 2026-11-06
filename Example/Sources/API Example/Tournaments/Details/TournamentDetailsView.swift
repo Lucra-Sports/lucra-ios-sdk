@@ -104,7 +104,7 @@ struct TournamentDetailsView: View {
 
                             Spacer()
 
-                            LucraAsyncImage(tournament.imageUrl, resize: .aspectFit) {
+                            LucraAsyncImage(tournament.displayImageUrl, resize: .aspectFit) {
                                 Image("tournament_placeholder")
                                     .resizable()
                                     .frame(width: 80, height: 80, alignment: .center)
@@ -147,7 +147,7 @@ struct TournamentDetailsView: View {
                 }
 
                 ForEach(Array(payout.rewards.enumerated()), id: \.offset) { _, reward in
-                    detailRow(reward.placeLabel ?? reward.positionLabel ?? "",
+                    detailRow(reward.positionLabel,
                               payout.showAmount ? (reward.amountLabel ?? reward.rewardLabel ?? "") : (reward.rewardLabel ?? ""))
                 }
             }
@@ -156,10 +156,10 @@ struct TournamentDetailsView: View {
 
     @ViewBuilder
     private var leaderboard: some View {
-        if let leaderboard = viewModel.tournament?.leaderboard, !leaderboard.rows.isEmpty {
-            section(title: "Leaderboard (\(leaderboard.pagination.totalCount))") {
-                ForEach(leaderboard.rows) { row in
-                    detailRow("\(row.rank ?? 0). \(row.name)", row.points ?? row.payout ?? "")
+        if let leaderboard = viewModel.leaderboard, !leaderboard.entries.isEmpty {
+            section(title: "Leaderboard (\(leaderboard.totalCount ?? leaderboard.entries.count))") {
+                ForEach(leaderboard.entries, id: \.userId) { entry in
+                    detailRow("\(entry.rank ?? entry.position). \(entry.name)", entry.points ?? entry.payout ?? "")
                 }
             }
         }
