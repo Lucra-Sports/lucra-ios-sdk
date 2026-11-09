@@ -43,11 +43,6 @@ struct SwiftUIExample: View {
                     initLucraFlow(.miniGamesHome)
                 }
 
-                // MiniGames Profile
-                button(title: LucraFlow.miniGamesProfile.displayName) {
-                    initLucraFlow(.miniGamesProfile)
-                }
-
                 // MiniGames Rewards
                 button(title: LucraFlow.miniGamesRewards.displayName) {
                     initLucraFlow(.miniGamesRewards)

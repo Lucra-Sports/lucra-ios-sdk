@@ -8,13 +8,15 @@
 import LucraSDK
 import SwiftUI
 
+@MainActor
 public class TournamentDetailsViewModel: ObservableObject {
 
     @ObservedObject var lucraClient: LucraClient
 
     let matchupId: String
 
-    @Published private(set) var tournament: TournamentUI?
+    @Published private(set) var tournament: LucraTournamentDetails?
+    @Published private(set) var leaderboard: LucraTournamentLeaderboard?
     @Published private(set) var isLoading: Bool = false
     @Published private(set) var errorDetails: String?
 
@@ -32,13 +34,19 @@ public class TournamentDetailsViewModel: ObservableObject {
         Task {
             defer { isLoading = false }
 
-            let result = await lucraClient.api.retrieveTournamentDetails(for: matchupId)
-
-            switch result {
+            switch await lucraClient.api.retrieveTournamentDetails(for: matchupId) {
             case .success(let tournament):
                 self.tournament = tournament
             case .failure(let error):
                 self.errorDetails = error.localizedDescription
+            }
+
+            switch await lucraClient.api.retrieveTournamentLeaderboard(for: matchupId) {
+            case .success(let leaderboard):
+                self.leaderboard = leaderboard
+            case .failure(let error):
+                self.leaderboard = nil
+                self.errorDetails = self.errorDetails ?? error.localizedDescription
             }
         }
     }
@@ -72,13 +80,11 @@ extension TournamentDetailsViewModel {
     var participantsDetail: String {
         guard let tournament else { return "" }
 
-        let total = tournament.totalParticipants ?? 0
-
         guard let max = tournament.maxParticipants else {
-            return "\(total) Participants"
+            return "\(tournament.participantsCount) Participants"
         }
 
-        return "\(total)/\(max) Participants"
+        return "\(tournament.participantsCount)/\(max) Participants"
     }
 
     var buyInDetail: String {
@@ -88,16 +94,16 @@ extension TournamentDetailsViewModel {
             return "FREE ENTRY"
         }
 
-        return tournament.buyInAmount?.moneyNoCents ?? ""
+        return tournament.buyInAmount.moneyNoCents
     }
 
     var timerDetail: String {
-        tournament?.timer?.caption ?? tournament?.expiresAt?.short ?? ""
+        tournament?.timer.caption ?? ""
     }
 
     var canJoin: Bool {
-        guard let tournament else { return false }
-        return tournament.attemptData?.canJoinTournament == true
+        guard !isLoading, let tournament, let leaderboard else { return false }
+        return tournament.isJoinable && leaderboard.currentUserEntry == nil
     }
 
     var requiresJoinCode: Bool {

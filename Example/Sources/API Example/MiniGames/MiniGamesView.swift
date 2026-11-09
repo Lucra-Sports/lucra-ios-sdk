@@ -44,8 +44,8 @@ struct MiniGamesView: View {
             }
             .lucraButtonStyle(.primary)
 
-            Button("Mini Games Profile") {
-                currentLucraFlow = .miniGamesProfile
+            Button("Profile") {
+                currentLucraFlow = .profile
             }
             .lucraButtonStyle(.secondary)
         }
